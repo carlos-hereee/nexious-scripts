@@ -4,9 +4,34 @@
   "description": "",
   "main": "all-watchers.js",
   "scripts": {
+    "nodemon": "nodemon",
+    "dev": "node ./scripts/run-all-watchers.js",
+    "watchers": "node ./scripts/all-watchers.js",
+    "watch:2": "tsc -p tsconfig.json --watch",
+    "watch:1": "tsc-alias -p tsconfig.json --watch",
+    "watch:lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
+    "copy:esm": "copyfiles -u 1 src/**/*.html src/**/*.css src/**/*.scss dist/esm",
+    "clean": "rimraf dist/ && npx prettier --write src/",
+    "compile": "npm run compile:tsc && npm run compile:tsc-alias",
+    "compile:tsc": "tsc -p tsconfig.json",
+    "compile:cjs": "tsc --module commonjs --outDir dist/cjs",
+    "compile:tsc-alias": "tsc-alias -p tsconfig.json dist/esm",
+    "compile:alias@types": "tsc-alias -p tsconfig.json dist/@types",
+    "pre-build": "npm unlink nexious-library && npm run clean && npm run compile",
+    "build": "npm run clean && npm run compile",
+    "build:alias": "npm run clean && npm run compile:alias",
+    "release:patch": "npm run build && npm version patch && npm publish",
+    "release:minor": "npm run build && npm version minor && npm publish",
+    "release:major": "npm run build && npm version major && npm publish",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^9.9.1",
+    "prettier": "^3.3.3",
+    "tsc-alias": "^1.8.10",
+    "typescript": "^5.5.4"
+  }
 }
