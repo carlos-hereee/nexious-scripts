@@ -7,7 +7,6 @@
     "jsxSingleQuote": false,
     "arrowParens": "always",
     "endOfLine": "lf",
-    "htmlWhitespaceSensitivity": "strict",
     "printWidth": 120
   }
   
