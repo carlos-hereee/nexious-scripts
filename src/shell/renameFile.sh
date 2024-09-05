@@ -11,7 +11,7 @@
 # KEY VARIABLES
 # Get the current directory path
 current_dir=$(pwd)
-node_module="node_modules/nexious-library/"
+node_module="node_modules/"
 # # Accessing the first argument PATH
 input_path=""$current_dir"/""$1"
 # # remove node_modules from string if exists

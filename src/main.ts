@@ -1,1 +1,2 @@
-export {copyFile} from './node/copy-file'
+export {copyFile} from './node/copyFile'
+export {renameFiles} from './node/renameFiles'
