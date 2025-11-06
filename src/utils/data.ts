@@ -1,3 +1,5 @@
+import message from "@data/message.json";
+
 export const updateFileMessages = {
   success: { message: message.modified, status: "success", error: null },
   skipped: { message: message.skipped, status: "skipped", error: null },
@@ -5,7 +7,7 @@ export const updateFileMessages = {
   skippedDir: { message: message.skippedDir, status: "skipped", error: null },
 };
 
-export const errorMessage = (error, msg) => {
+export const errorMessage = (error: string, msg: string) => {
   return { status: "error", error, message: msg };
 };
 
