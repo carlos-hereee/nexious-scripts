@@ -1,12 +1,17 @@
-import { updateFileMessages } from "../utils/message.js";
+import { IAuthorsPen } from "file-paths";
 import { readDir } from "./readDir.js";
 import { updateFile } from "./updateFile.js";
 
 // recursively traverse directory
-export const authorsPen = async ({ currentPath, exclude, target, cb, logger, pattern }) => {
-  // key variables
-  if (!logger) logger = {};
-  if (!exclude) exclude = { files: [], directory: [] };
+export const authorsPen = async ({
+  currentPath,
+  target,
+  cb,
+  pattern,
+  // if undefined use default
+  exclude = { files: [], directory: [] },
+  logger = {},
+}: IAuthorsPen) => {
   // read files and directories in path
   const directory = await readDir(currentPath);
   // if no directory was found log result

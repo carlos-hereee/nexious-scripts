@@ -1,33 +1,51 @@
 {
-  "skipped": "Skipped excluded file",
-  "notFound": "Skipped unable to find directory",
   "skippedDir": "Skipped excluded directory",
-  "modified": "Made changes to file",
+
   "error": {
+    "skipped": {
+      "message": "Skipped!",
+      "code": 304,
+      "status": "skipped"
+    },
+    "notFound": {
+      "message": "Unable to desired data",
+      "code": 404,
+      "status": "missingProps"
+    },
     "target": {
       "message": "search paths is a required prop please include it in function param",
-      "status": 404,
-      "error": "missingProps"
+      "code": 404,
+      "status": "missingProps"
     },
     "searchPaths": {
       "message": "search paths is a required prop please include it in function param",
-      "status": 404,
-      "error": "missingProps"
+      "code": 404,
+      "status": "missingProps"
     },
     "cb": {
       "message": "cb(callback) is a required prop please include it in function param",
-      "status": 404,
-      "error": "missingProps"
+      "code": 404,
+      "status": "missingProps"
     },
     "regexPattern": {
       "message": "A regex expression is required please include it in function param",
-      "status": 404,
-      "error": "missingProps"
+      "code": 404,
+      "status": "missingProps"
+    },
+    "badRequest": {
+      "message": "An unexpected error occurred",
+      "code": 400,
+      "status": "unknownError"
     },
     "filePath": {
       "message": "filePath is a required prop please include it in function param",
-      "status": 404,
-      "error": "missingProps"
+      "code": 404,
+      "status": "missingProps"
     }
+  },
+  "success": {
+    "message": "Made changes to file",
+    "code": 200,
+    "status": "success"
   }
 }

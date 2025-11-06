@@ -1,6 +1,6 @@
 import fs from "fs/promises";
 import { matchString } from "../utils/matchString";
-import { errorMessage, updateFileMessages } from "../utils/message";
+import { generateLogMessage } from "../utils/message";
 import { error } from "@data/message.json";
 import { IUpdateFile } from "file-paths";
 
@@ -32,12 +32,12 @@ export const updateFile = async ({ filePath, pattern, cb }: IUpdateFile) => {
       // update file
       // console.log("updatedFile :>> ", updatedFile);
       await fs.writeFile(filePath, updatedFile.join("\n"));
-      return updateFileMessages.success;
+      return generateLogMessage("success");
     }
     // otherwise skip update and return status
-    return updateFileMessages.skipped;
+    return generateLogMessage("skipped");
     // update file
   } catch (error) {
-    return errorMessage(error, "unable to update file");
+    return generateLogMessage("badRequest");
   }
 };
