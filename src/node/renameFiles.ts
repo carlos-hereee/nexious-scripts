@@ -1,3 +1,3 @@
-export const renameFiles = (target:string) => {
-    console.log('target', target)
-}
+// export const renameFiles = (target:string) => {
+//     console.log('target', target)
+// }

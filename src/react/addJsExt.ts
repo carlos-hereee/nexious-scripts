@@ -1,11 +1,11 @@
-// import { requiredProps } from "../utils/data.js";
-// import { authorsPen } from "./helpers/node/authorsPen.js";
-// import { jsonRevertAssert } from "./helpers/node/typography.js";
-// import { regexPatern } from "../utils/regexPatterns.js";
+// import { requiredProps } from "../utils/data";
+// import { authorsPen } from "./helpers/node/authorsPen";
+// import { addJsExt } from "./helpers/node/typography";
+// import { regexPatern } from "../utils/regexPatterns";
 
-// const reg = regexPatern.jsonAssert;
+// const excludedFiles = { files: ["server", "config"], directory: ["data", "@types"] };
+// const reg = regexPatern.localPathExcludeJson;
 // const search = ["src"];
-// const excludedFiles = { files: [], directory: [] };
 // const ext = ".ts";
 
 // const main = async ({ searchPaths, exclude, pattern, target }) => {
@@ -19,9 +19,9 @@
 //   for (let num = 0; num < searchPaths.length; num += 1) {
 //     const currentPath = searchPaths[num];
 //     console.log("starting search on :>> ", currentPath);
-//     await authorsPen({ exclude, currentPath, target, pattern, logger, cb: jsonRevertAssert });
+//     await authorsPen({ exclude, currentPath, target, pattern, logger, cb: addJsExt });
 //   }
 //   // TODO: cleaner log i.e. updated x num of files skipped x num of files ect.
-//   // console.log("Changes made :>> ", logger);
+//   console.log("Changes made :>> ", logger);
 // };
 // main({ searchPaths: search, exclude: excludedFiles, pattern: reg, target: ext });
