@@ -26,6 +26,8 @@
       "@data/*": ["data/*"],
       "@node": ["node"],
       "@node/*": ["node/*"],
+      "@utils": ["utils"],
+      "@utils/*": ["utils/*"],
       "@shell": ["shell"],
       "@shell/*": ["shell/*"]
     } /* Specify a set of entries that re-map imports to additional lookup locations. */,

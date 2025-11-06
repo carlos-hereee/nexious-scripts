@@ -1,4 +1,4 @@
-import { updateFileMessages } from "../utils/data.js";
+import { updateFileMessages } from "../utils/message.js";
 import { readDir } from "./readDir.js";
 import { updateFile } from "./updateFile.js";
 

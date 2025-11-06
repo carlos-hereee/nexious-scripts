@@ -1,13 +1,15 @@
 import fs from "fs/promises";
-import { matchString } from "./matchString.js";
-import { errorMessage, requiredProps, updateFileMessages } from "../utils/data.js";
+import { matchString } from "../utils/matchString";
+import { errorMessage, updateFileMessages } from "../utils/message";
+import { error } from "@data/message.json";
+import { IUpdateFile } from "file-paths";
 
-export const updateFile = async ({ filePath, pattern, cb }) => {
+export const updateFile = async ({ filePath, pattern, cb }: IUpdateFile) => {
   try {
     // require key variables
-    if (!pattern) throw Error(requiredProps.regexPattern);
-    if (!filePath) throw Error(requiredProps.filePath);
-    if (!cb) throw Error(requiredProps.cb);
+    if (!pattern) throw Error(error.regexPattern.message);
+    if (!filePath) throw Error(error.filePath.message);
+    if (!cb) throw Error(error.cb.message);
     // keep track of modified files
     let isModified = false;
     // read file

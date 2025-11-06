@@ -1,12 +1,33 @@
 {
-  "error": "Unable to perform operation",
   "skipped": "Skipped excluded file",
   "notFound": "Skipped unable to find directory",
   "skippedDir": "Skipped excluded directory",
   "modified": "Made changes to file",
-  "regexRequired": "A regex expression is required please include it in function param",
-  "filePath": "filePath is a required prop please include it in function param",
-  "searchPaths": "search paths is a required prop please include it in function param",
-  "target": "search paths is a required prop please include it in function param",
-  "cb": "cb(callback) is a required prop please include it in function param"
+  "error": {
+    "target": {
+      "message": "search paths is a required prop please include it in function param",
+      "status": 404,
+      "error": "missingProps"
+    },
+    "searchPaths": {
+      "message": "search paths is a required prop please include it in function param",
+      "status": 404,
+      "error": "missingProps"
+    },
+    "cb": {
+      "message": "cb(callback) is a required prop please include it in function param",
+      "status": 404,
+      "error": "missingProps"
+    },
+    "regexPattern": {
+      "message": "A regex expression is required please include it in function param",
+      "status": 404,
+      "error": "missingProps"
+    },
+    "filePath": {
+      "message": "filePath is a required prop please include it in function param",
+      "status": 404,
+      "error": "missingProps"
+    }
+  }
 }
