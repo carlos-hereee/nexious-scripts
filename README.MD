@@ -22,7 +22,6 @@
            "moduleResolution": "Node",
            "esModuleInterop": true /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */,
            "allowSyntheticDefaultImports": true, // e.i import package from 'library'
-           "jsx": "react-jsx" /* Specify what JSX code is generated. */,
            "baseUrl": "src" /* Specify the base directory to resolve non-relative module names. */,
            "paths": {
              // "@context/*": ["src/utils/context/*"]
