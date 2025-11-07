@@ -1,0 +1,15 @@
+{
+  "initContext": [
+    "import { createContext, useCallback, useContext, useMemo, useReducer }  from 'react';",
+    "import { reducer } from './${name}Reducer';",
+    "export const ${name}Context = createContext<I${name}Schema>({} as I${name}Schema );",
+    "export const ${name}State =( {children}:ChildProps )=> {",
+
+    "const [state, dispatch] = useReducer(reducer,  ${lowerCaseName}State);",
+    "const { setStatus } = useContext(LogContext);",
+    "${contextDispatch}",
+    "${contextRequest}",
+    "const ${lowerCaseName}Values = useMemo(())=>{ return ${contextValues} }, [${contextTriggers}]);",
+    "return <${name}Context.Provider value={${lowerCaseName}Values}>{children}</${name}Context.Provider>);};"
+  ]
+}

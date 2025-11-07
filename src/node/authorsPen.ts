@@ -31,7 +31,10 @@ export const authorsPen = async ({
   // read files and directories in path
   const directory = await readDir(currentPath);
   // if no directory was found log result
-  if (!directory) return (logger[currentPath] = generateLogMessage("notFound"));
+  if (!directory) {
+    logger[currentPath] = generateLogMessage("notFound");
+    return logger;
+  }
   // search for deserired files
   for (let file of directory) {
     const filePath = `${currentPath}/${file.name}`;

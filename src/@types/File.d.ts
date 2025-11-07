@@ -15,6 +15,8 @@ declare module "file-paths" {
   export interface IUpdateFile {
     filePath: string;
     pattern: string;
+
+    isModified?: boolean;
     cb: (e: unknown) => void;
   }
   export interface IAuthorsPen {

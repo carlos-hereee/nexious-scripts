@@ -1,23 +1,16 @@
+import type { IUpdateFile } from "file-paths";
 import fs from "fs/promises";
 import { matchString } from "../utils/matchString.js";
 import { generateLogMessage } from "../utils/message.js";
-import data from "@data/message.json" with { type: "json" };
-import type { IUpdateFile } from "file-paths";
+import { readFile } from "./readFile.js";
 
-export const updateFile = async ({ filePath, pattern, cb }: IUpdateFile) => {
+export const updateFile = async ({ filePath, pattern, cb, isModified = false }: IUpdateFile) => {
   try {
-    // require key variables
-    if (!pattern) throw Error(data.error.regexPattern.message);
-    if (!filePath) throw Error(data.error.filePath.message);
-    if (!cb) throw Error(data.error.cb.message);
-    // keep track of modified files
-    let isModified = false;
-    // read file
-    const file = await fs.readFile(filePath, "utf8");
-    // convert to array
-    const lineByLine = file.split(/\r?\n/);
+    const file = await readFile<string[]>(filePath);
+    if (!file) return generateLogMessage("badRequest");
+
     // iterate and match with desired partern
-    const updatedFile = lineByLine.map((line) => {
+    const updatedFile = file.map((line) => {
       // if match fire cb
       if (matchString(line, pattern)) {
         // update tracker
@@ -30,7 +23,6 @@ export const updateFile = async ({ filePath, pattern, cb }: IUpdateFile) => {
     // if the file meets conditions
     if (isModified) {
       // update file
-      // console.log("updatedFile :>> ", updatedFile);
       await fs.writeFile(filePath, updatedFile.join("\n"));
       return generateLogMessage("success");
     }
