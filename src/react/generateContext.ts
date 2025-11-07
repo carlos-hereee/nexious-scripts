@@ -1,21 +1,23 @@
 import { authorsPen } from "@nodeDir/authorsPen.js";
-import { loadArgs } from "@nodeDir/loadArgs.js";
-import { readFile } from "@nodeDir/readFile.js";
+import { readConfig } from "@nodeDir/readFile.js";
 
-interface P {
-  search: string;
+interface ContextConfig {
+  name: string;
+  buildPath: string;
+  state: string[];
+  dispatch: string[];
+  request: string[];
 }
-const { config } = loadArgs({});
-export const generateContext = async ({ search }: P) => {
-  // read config file
-  const file = await readFile(search);
-  console.log("file", file);
-  // const logger = await authorsPen({ currentPath: search, cb: (e) => console.log("e", e) });
-  // console.log("logger", logger);
-  // for (let num = 0; num < search.length; num += 1) {
-  //   const currentPath = search[num];
-  //   console.log("starting search on :>> ", currentPath);
-  //   authorsPen({ currentPath, cb: (e) => console.log("e", e) });
-  // }
-};
-generateContext({ search: config });
+interface PConfig {
+  createContext: ContextConfig[];
+}
+
+const data = await readConfig<PConfig>();
+console.log("data", data);
+// const logger = await authorsPen({ currentPath: search, cb: (e) => console.log("e", e) });
+// console.log("logger", logger);
+// for (let num = 0; num < search.length; num += 1) {
+//   const currentPath = search[num];
+//   console.log("starting search on :>> ", currentPath);
+//   authorsPen({ currentPath, cb: (e) => console.log("e", e) });
+// }

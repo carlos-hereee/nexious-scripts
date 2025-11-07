@@ -1,16 +1,13 @@
 interface LoadArgs {
-  config?: string;
+  config: string;
 }
-// TODO: BUNDLER PATHS
-export const loadArgs = ({ config = "" }: LoadArgs) => {
+export const loadArgs = (config = ""): LoadArgs => {
   // Get only the arguments passed to the script
   const scriptArgs = process.argv.slice(2);
   // // You can parse these arguments further if needed
   // // For example, to get a value from a key=value pair:
   const configFile = scriptArgs.find((arg) => arg.startsWith("config="));
   if (configFile) config = configFile.split("=")[1];
-  return {
-    // replace node modules to find config file
-    config: process.cwd().replace("node_modules\\nexious-scripts", "") + config,
-  };
+  // replace node modules to find config file
+  return { config: process.cwd().replace("node_modules\\nexious-scripts", "") + config };
 };
