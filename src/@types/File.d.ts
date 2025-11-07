@@ -18,10 +18,10 @@ declare module "file-paths" {
   }
   export interface IAuthorsPen {
     currentPath: string;
-    exclude: { files: string[]; directory: string[] };
-    target: string;
     cb: (e: unknown) => void;
-    logger: { [key: string]: MessageData };
-    pattern: string;
+    target?: string;
+    pattern?: string;
+    logger?: { [key: string]: MessageData };
+    exclude?: { files: string[]; directory: string[] };
   }
 }

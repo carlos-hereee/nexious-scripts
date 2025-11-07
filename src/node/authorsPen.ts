@@ -1,18 +1,19 @@
-import { IAuthorsPen } from "file-paths";
-import { readDir } from "./readDir";
-import { updateFile } from "./updateFile";
-import { generateLogMessage } from "@utils/message";
+import type { IAuthorsPen } from "file-paths";
+import { readDir } from "./readDir.js";
+import { updateFile } from "./updateFile.js";
+import { generateLogMessage } from "@utils/message.js";
 
 // recursively traverse directory
 export const authorsPen = async ({
   currentPath,
-  target,
   cb,
-  pattern,
+  target = "",
+  pattern = "",
   // if undefined use default
   exclude = { files: [], directory: [] },
   logger = {},
 }: IAuthorsPen) => {
+  console.log("\n\ncurrentPath", currentPath + "\n\n");
   // read files and directories in path
   const directory = await readDir(currentPath);
   // if no directory was found log result

@@ -1,15 +1,15 @@
-import { error, success } from "@data/message.json";
+import data from "@data/message.json" with { type: "json" };
 import { ErrorName } from "file-paths";
 
 export const generateLogMessage = (err: ErrorName, path?: string) => {
   switch (err) {
     case "notFound":
-      return error.notFound;
+      return data.error.notFound;
     case "skipped":
-      return { ...error.skipped, message: error.skipped.message + " " + path || "" };
+      return { ...data.error.skipped, message: data.error.skipped.message + " " + path || "" };
     case "success":
-      return success;
+      return data.success;
     default:
-      return error.badRequest;
+      return data.error.badRequest;
   }
 };

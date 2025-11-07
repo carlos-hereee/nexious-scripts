@@ -9,6 +9,7 @@
     "watch:2": "tsc-alias -p tsconfig.json --watch",
     "watch:lint": "eslint \"src/**/*.{js,ts}\"",
     "pretty": "npx prettier --write src/",
+    "generateContext": "node dist/react/generateContext",
     "clean": "rimraf dist/ && npx prettier --write src/",
     "compile": "npm run compile:tsc && npm run compile:tsc-alias",
     "compile:tsc": "tsc -p tsconfig.json",
