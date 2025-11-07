@@ -8,7 +8,7 @@ interface P {
 const { config } = loadArgs({});
 export const generateContext = async ({ search }: P) => {
   // read config file
-  const file = await readFile(search, (e) => console.log("e", e));
+  const file = await readFile(search);
   console.log("file", file);
   // const logger = await authorsPen({ currentPath: search, cb: (e) => console.log("e", e) });
   // console.log("logger", logger);

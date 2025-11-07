@@ -1,16 +1,20 @@
 import fs from "fs/promises";
 
-export const readFile = async (filePath: string, cb: (e: string[]) => void) => {
+export const readFile = async (path: string) => {
   try {
-    console.log("filePath==>", filePath + "\n\n\n");
-    // read file
-    const file = await fs.readFile(filePath, "utf8");
-    // convert to array
-    const lineByLine = file.split(/\r?\n/);
-    // pass converted array
-    return cb ? cb(lineByLine) : lineByLine;
+    const file = await fs.readFile(path, "utf8");
+    if (path.includes(".json")) return JSON.parse(file);
+    // otherwise convert to array
+    return file.split(/\r?\n/);
+  } catch (error) {
+    console.log("readFile error", error);
+  }
+};
+
+export const readDir = async (path: string) => {
+  try {
+    return await fs.readdir(path, { withFileTypes: true });
   } catch (error) {
     console.log("error", error);
-    return null;
   }
 };

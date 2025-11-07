@@ -1,7 +1,7 @@
 import type { IAuthorsPen } from "file-paths";
-import { readDir } from "./readDir.js";
 import { updateFile } from "./updateFile.js";
 import { generateLogMessage } from "@utils/message.js";
+import { readDir } from "./readFile.js";
 
 // recursively traverse directory
 export const authorsPen = async ({
@@ -15,6 +15,7 @@ export const authorsPen = async ({
 }: IAuthorsPen) => {
   // read files and directories in path
   const directory = await readDir(currentPath);
+  console.log("directory", directory);
   // if no directory was found log result
   if (!directory) return (logger[currentPath] = generateLogMessage("notFound"));
   // search for deserired files
