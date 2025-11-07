@@ -12,13 +12,14 @@ interface PConfig {
   createContext: ContextConfig[];
 }
 
+const buildContext = (path: string) => {
+  console.log("path", path);
+};
 const data = await readConfig<PConfig>();
 if (data) {
   data.configFile.createContext.forEach(async (context) => {
     const buildPath = data.root + context.buildPath;
-    const logger = await authorsPen({ currentPath: buildPath, cb: (e) => console.log("e", e) });
-
-    console.log("path ==>", logger);
+    await authorsPen({ currentPath: buildPath, cb: (path) => buildContext(path), name: context.name });
     // console.log("context", context);
   });
 }

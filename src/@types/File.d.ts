@@ -3,6 +3,7 @@ declare module "file-paths" {
 
   export type StatusPhaseCode = 404 | 202 | 400 | number;
   export interface MessageData {
+    // skippedFiles: string[];
     message: string;
     status: string;
     code: StatusPhaseCode;
@@ -18,9 +19,10 @@ declare module "file-paths" {
   }
   export interface IAuthorsPen {
     currentPath: string;
-    cb: (e: unknown) => void;
+    cb: (filePath: string) => void;
     target?: string;
     pattern?: string;
+    name: string;
     logger?: { [key: string]: MessageData };
     exclude?: { files: string[]; directory: string[] };
   }
