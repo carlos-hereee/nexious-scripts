@@ -13,7 +13,6 @@ export const authorsPen = async ({
   exclude = { files: [], directory: [] },
   logger = {},
 }: IAuthorsPen) => {
-  console.log("\n\ncurrentPath", currentPath + "\n\n");
   // read files and directories in path
   const directory = await readDir(currentPath);
   // if no directory was found log result
