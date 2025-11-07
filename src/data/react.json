@@ -1,7 +1,12 @@
 {
   "initContext": [
     "import { createContext, useCallback, useContext, useMemo, useReducer }  from 'react';",
+    "import { I${name}Schema } from '${lowerCaseName}-context';",
     "import { reducer } from './${name}Reducer';",
+    "import { ChildProps } from 'app-types';",
+    "import ${lowerCaseName}State from '@data/state/${lowerCaseName}State.json';",
+    "import { LogContext } from '../log/LogContext';",
+
     "export const ${name}Context = createContext<I${name}Schema>({} as I${name}Schema );",
     "export const ${name}State =( {children}:ChildProps )=> {",
 
@@ -9,7 +14,8 @@
     "const { setStatus } = useContext(LogContext);",
     "${contextDispatch}",
     "${contextRequest}",
-    "const ${lowerCaseName}Values = useMemo(())=>{ return ${contextValues} }, [${contextTriggers}]);",
+    "const ${lowerCaseName}Values = useMemo(())=>{",
+    "return ${contextValues} }, [${contextTriggers}]);",
     "return <${name}Context.Provider value={${lowerCaseName}Values}>{children}</${name}Context.Provider>);};"
   ]
 }

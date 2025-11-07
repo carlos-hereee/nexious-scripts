@@ -1,9 +1,9 @@
 import fs from "fs/promises";
 
-export const createFileIfNotExists = async (filePath: string, content: string = "") => {
+export const createFileIfNotExists = async (currentDir: string, filePath: string, content: string = "") => {
   try {
     // Ensure the directory exists, create it recursively if not
-    await fs.mkdir(filePath.replace(".tsx", ""), { recursive: true });
+    await fs.mkdir(currentDir, { recursive: true });
 
     // Check if the file exists
     await fs.access(filePath, fs.constants.F_OK);
