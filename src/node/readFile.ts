@@ -22,15 +22,15 @@ export const readDir = async (path: string) => {
 };
 
 // read config file
-export const readConfig = async <T>(): Promise<T | null> => {
+export const readConfig = async <T>(): Promise<{ configFile: T; root: string } | null> => {
   try {
-    const { config } = loadArgs();
+    const { config, root } = loadArgs();
     const configFile = await readFile<T>(config);
     if (!configFile) {
       console.log("config path not set up", configFile);
       return null;
     }
-    return configFile;
+    return { configFile, root };
   } catch (error) {
     console.log("Erro reading config file", error);
     return null;

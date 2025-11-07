@@ -13,8 +13,16 @@ interface PConfig {
 }
 
 const data = await readConfig<PConfig>();
-console.log("data", data);
-// const logger = await authorsPen({ currentPath: search, cb: (e) => console.log("e", e) });
+if (data) {
+  data.configFile.createContext.forEach(async (context) => {
+    const buildPath = data.root + context.buildPath;
+    const logger = await authorsPen({ currentPath: buildPath, cb: (e) => console.log("e", e) });
+
+    console.log("path ==>", logger);
+    // console.log("context", context);
+  });
+}
+
 // console.log("logger", logger);
 // for (let num = 0; num < search.length; num += 1) {
 //   const currentPath = search[num];

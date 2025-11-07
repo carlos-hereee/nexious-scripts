@@ -1,5 +1,6 @@
 interface LoadArgs {
   config: string;
+  root: string;
 }
 export const loadArgs = (config = ""): LoadArgs => {
   // Get only the arguments passed to the script
@@ -9,5 +10,6 @@ export const loadArgs = (config = ""): LoadArgs => {
   const configFile = scriptArgs.find((arg) => arg.startsWith("config="));
   if (configFile) config = configFile.split("=")[1];
   // replace node modules to find config file
-  return { config: process.cwd().replace("node_modules\\nexious-scripts", "") + config };
+  const root = process.cwd().replace("node_modules\\nexious-scripts", "");
+  return { config: root + config, root };
 };
