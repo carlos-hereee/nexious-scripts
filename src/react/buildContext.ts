@@ -1,5 +1,4 @@
-import regex from "@data/regex.json";
-import { renameFileImports } from "@utils/typography";
+import { renameDispatch, renameFileImports } from "@utils/typography.js";
 import { ContextConfig } from "interface-react";
 
 export const buildContext = (line: string, context: ContextConfig) => {
@@ -9,9 +8,7 @@ export const buildContext = (line: string, context: ContextConfig) => {
       "${contextDispatch}",
       `${context.dispatch.map(
         (d) =>
-          `const ${d} = useCallback((payload) => dispatch({ type: A_${context.name.toUpperCase()}.${d
-            .replace(regex.camelCaseToUnderscore, "$1_$2")
-            .toUpperCase()}, payload }), []);`
+          `const ${d} = useCallback((payload) => dispatch({ type: ${renameDispatch(context.name, d)}, payload }), []);`
       )}`
     )
     .replace(
