@@ -14,8 +14,8 @@ if (data) {
     const initContext = init.initContext.map((line) => buildContext(line, context));
     const initReducer = init.initReducer.map((line) => buildReducer(line, context));
 
-    createFileIfNotExists(currentDir, currentDir + "/index.ts", initContext.join("\n"));
-    createFileIfNotExists(currentDir, currentDir + "/reducer.ts", initReducer.join("\n"));
+    createFileIfNotExists(currentDir, currentDir + "/index.tsx", initContext.join("\n"));
+    createFileIfNotExists(currentDir, currentDir + "/reducer.tsx", initReducer.join("\n"));
 
     context.request.forEach((req) => {
       const file = init.initRequest.map((line) => buildRequest(line, context, req));

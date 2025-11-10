@@ -6,11 +6,14 @@ export const buildContext = (line: string, context: ContextConfig) => {
   return data
     .replace(
       "${contextDispatch}",
-      `${context.dispatch.map(
-        (d) =>
-          `const ${d} = useCallback((payload) => dispatch({ type: ${renameDispatch(context.name, d)}, payload }), []);`
-      )}`
+      context.dispatch
+        .map(
+          (d) =>
+            `const ${d} = useCallback((payload) => dispatch({ type: ${renameDispatch(context.name, d.replace("set", ""))}, payload }), []);`
+        )
+        .join(";")
     )
+    .replace("${requestImports}", context.request.map((d) => `import { ${d}Req } from './request/${d}Req'`).join(";"))
     .replace(
       "${contextRequest}",
       context.request
@@ -19,9 +22,9 @@ export const buildContext = (line: string, context: ContextConfig) => {
     )
     .replace(
       "${contextValues}",
-      `{${context.state.map((s) => `${s}: state.${s}`).join(",")} , ${context.dispatch
+      `${context.state.map((s) => `${s}: state.${s}`).join(",")} , ${context.dispatch
         .map((d) => `${d}`)
-        .join(",")} , ${context.request.map((d) => `${d}`).join(",")}}`
+        .join(",")} , ${context.request.map((d) => `${d}`).join(",")}`
     )
     .replace("${contextTriggers}", context.state.map((s) => `state.${s}`).join(","));
 };

@@ -9,15 +9,21 @@
     "${requestImports}",
     "",
     "export const ${name}Context = createContext<I${name}Schema>({} as I${name}Schema );",
+    "",
     "export const ${name}State =( {children}:ChildProps )=> {",
-
     "const [state, dispatch] = useReducer(reducer,  ${nameLower}State);",
     "const { setStatus } = useContext(LogContext);",
+    "",
     "${contextDispatch}",
     "${contextRequest}",
-    "const ${nameLower}Values = useMemo(())=>{",
-    "return ${contextValues} }, [${contextTriggers}]);",
-    "return <${name}Context.Provider value={${nameLower}Values}>{children}</${name}Context.Provider>);};"
+    "",
+    "const ${nameLower}Values = useMemo(()=>{",
+    "return { ",
+    "${contextValues}",
+    " }; }, [  ${contextTriggers}  ]);",
+    "",
+    "return <${name}Context.Provider value={${nameLower}Values}> {children} </${name}Context.Provider>;",
+    "};"
   ],
   "initReducer": [
     "import { ${name}ActionProps, P${name}State } from '${nameLower}-context';",
