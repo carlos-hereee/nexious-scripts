@@ -1,25 +1,26 @@
 {
   "initContext": [
     "import { createContext, useCallback, useContext, useMemo, useReducer }  from 'react';",
-    "import { I${name}Schema } from '${lowerCaseName}-context';",
+    "import { I${name}Schema } from '${nameLower}-context';",
     "import { reducer } from './${name}Reducer';",
     "import { ChildProps } from 'app-types';",
-    "import ${lowerCaseName}State from '@data/state/${lowerCaseName}State.json';",
+    "import ${nameLower}State from '@data/state/${nameLower}State.json';",
     "import { LogContext } from '../log/LogContext';",
 
     "export const ${name}Context = createContext<I${name}Schema>({} as I${name}Schema );",
     "export const ${name}State =( {children}:ChildProps )=> {",
 
-    "const [state, dispatch] = useReducer(reducer,  ${lowerCaseName}State);",
+    "const [state, dispatch] = useReducer(reducer,  ${nameLower}State);",
     "const { setStatus } = useContext(LogContext);",
     "${contextDispatch}",
     "${contextRequest}",
-    "const ${lowerCaseName}Values = useMemo(())=>{",
+    "const ${nameLower}Values = useMemo(())=>{",
     "return ${contextValues} }, [${contextTriggers}]);",
-    "return <${name}Context.Provider value={${lowerCaseName}Values}>{children}</${name}Context.Provider>);};"
+    "return <${name}Context.Provider value={${nameLower}Values}>{children}</${name}Context.Provider>);};"
   ],
   "initReducer": [
-    "import { A_${name} } from '@actions/${name}Actions';import { ${name}ActionProps, P${name}State } from '${lowerCaseName}-context';",
+    "import { A_${name} } from '@actions/${name}Actions';import { ${name}ActionProps, P${name}State } from '${nameLower}-context';",
+    "export enum A_${nameUpper} { ${reducerTypes} }",
     "export const reducer = (state: P${name}State, action: ${name}ActionProps): P${name}State => {",
     "  switch (action.type) { case A_${name}.IS_LOADING:",
     "return { ...state, isLoading: action.payload };",
@@ -27,5 +28,15 @@
     "    default:",
     "return state;",
     "}};"
+  ],
+  "initRequest": [
+    "import { A_${name} } from '@actions/${name}Actions';import { axiosAuth } from '@axios/axiosAuth';import { isDev } from '@config';",
+    "import { ${name}RequesthProps } from '${nameLower}-context';",
+    "export const ${requestName} = async ({ values, dispatch, setStatus }: ${name}RequesthProps) => {",
+    "try { setStatus('LOADING');",
+    "{requestRoute}",
+    "setStatus('SUCCESS');",
+    "} catch (error) {",
+    "if (isDev) console.log('error', error);}};"
   ]
 }

@@ -12,7 +12,10 @@ if (data) {
     const currentDir = buildPath + "/" + context.name + "Context";
     const initContext = init.initContext.map((line) => buildContext(line, context));
     const initReducer = init.initReducer.map((line) => buildReducer(line, context));
-    console.log("\n\ninitReducer ==>", initReducer, "\n\n");
+    const requests = context.request.forEach((req) => {
+      console.log("\n\nreq ==>", req, "\n\n");
+    });
+    console.log("\n\nrequest ==>", requests, "\n\n");
     // console.log("\n\ninitContext ==>", initContext, "\n\n");
     // createFileIfNotExists(currentDir, contextFile, initContext.join("\n"));
   });

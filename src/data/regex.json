@@ -2,6 +2,6 @@
   "localPathIncludeJson": "from (?!.jsonwebtoken)(.*\\.json)",
   "localPathExcludeJson": "from (?!.*json)(.*)/",
   "jsonAssert": "assert { type: \"json\" };",
-  "camelCaseToUnderscore": "/([a-z0-9]|(?=[A-Z]))([A-Z])/g",
+  "camelCaseToUnderscore": "",
   "localPath": "(.*)/"
 }

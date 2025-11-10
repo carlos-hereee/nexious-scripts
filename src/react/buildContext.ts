@@ -1,8 +1,8 @@
-import { renameDispatch, renameFileImports } from "@utils/typography.js";
+import { renameDispatch, renameName } from "@utils/typography.js";
 import { ContextConfig } from "interface-react";
 
 export const buildContext = (line: string, context: ContextConfig) => {
-  const data = renameFileImports(line, context.name);
+  const data = renameName(line, context.name);
   return data
     .replace(
       "${contextDispatch}",
