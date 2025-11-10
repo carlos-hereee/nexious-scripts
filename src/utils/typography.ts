@@ -1,32 +1,37 @@
-interface P {
+interface PWord {
   string: string;
   current: string;
   target: string;
+  casing?: "upper" | "lower" | "none";
 }
-export const replaceWord = ({ string, current, target }: P): string => {
-  if (typeof string !== "string") return string;
-  return string.replace(current, target);
+interface PCasing {
+  data: string;
+  casing?: "upper" | "lower" | "none";
+}
+export const modifyCasing = ({ data, casing }: PCasing) => {
+  switch (casing) {
+    case "upper":
+      return data.toUpperCase();
+    case "lower":
+      return data.toLowerCase();
+    default:
+      return data;
+  }
 };
-// // add missing js extension
-// export const addJsExt = (string: string) => {
-//   return string.replace(`";`, `.js";`);
-// };
-// // update exports to esm
-// export const exportEsm = (string: string, fileName: string) => {
-//   if (typeof string === "string") {
-//     const componentName = fileName.split(".ts")[0];
-//     return string.replace("export", `export const ${componentName}`);
-//   }
-// };
-// // update import esm
-// export const importEsm = (string: string) => {
-//   if (typeof string === "string") {
-//     return string.replace("const", "import").replace("= require(", " from ").replace(")", "");
-//   }
-// };
-// export const jsonAssert = (string: string) => {
-//   return string.replace(`;`, ` assert { type: "json" };`);
-// };
-// export const jsonRevertAssert = (string: string) => {
-//   return string.replace(`assert { type: "json" };`, `;`);
-// };
+
+export const replaceWord = ({ string, current, target, casing }: PWord) => {
+  if (typeof string !== "string") return string;
+  const data = modifyCasing({ data: target, casing });
+
+  return string.replace(current, data);
+};
+export const replaceAllWords = ({ string, target, current, casing }: PWord) => {
+  if (typeof string !== "string") return string;
+  const data = modifyCasing({ data: target, casing });
+
+  return string.replaceAll(current, data);
+};
+
+export const renameFileImports = (data: string, target: string) => {
+  return data.replaceAll("${name}", target).replaceAll("${lowerCaseName}", target.toLowerCase());
+};

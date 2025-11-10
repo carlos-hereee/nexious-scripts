@@ -1,10 +1,10 @@
 import regex from "@data/regex.json";
+import { renameFileImports } from "@utils/typography";
 import { ContextConfig } from "interface-react";
 
 export const buildContext = (line: string, context: ContextConfig) => {
-  return line
-    .replaceAll("${name}", context.name)
-    .replaceAll("${lowerCaseName}", context.name.toLowerCase())
+  const data = renameFileImports(line, context.name);
+  return data
     .replace(
       "${contextDispatch}",
       `${context.dispatch.map(
