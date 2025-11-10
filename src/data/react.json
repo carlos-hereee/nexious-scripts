@@ -2,11 +2,12 @@
   "initContext": [
     "import { createContext, useCallback, useContext, useMemo, useReducer }  from 'react';",
     "import { I${name}Schema } from '${nameLower}-context';",
-    "import { reducer } from './${name}Reducer';",
+    "import { reducer,  A_${nameUpper}  } from './reducer';",
     "import { ChildProps } from 'app-types';",
     "import ${nameLower}State from '@data/state/${nameLower}State.json';",
     "import { LogContext } from '../log/LogContext';",
-
+    "${requestImports}",
+    "",
     "export const ${name}Context = createContext<I${name}Schema>({} as I${name}Schema );",
     "export const ${name}State =( {children}:ChildProps )=> {",
 
@@ -19,22 +20,23 @@
     "return <${name}Context.Provider value={${nameLower}Values}>{children}</${name}Context.Provider>);};"
   ],
   "initReducer": [
-    "import { A_${name} } from '@actions/${name}Actions';import { ${name}ActionProps, P${name}State } from '${nameLower}-context';",
+    "import { ${name}ActionProps, P${name}State } from '${nameLower}-context';",
+    "",
     "export enum A_${nameUpper} { ${reducerTypes} }",
     "export const reducer = (state: P${name}State, action: ${name}ActionProps): P${name}State => {",
-    "  switch (action.type) { case A_${name}.IS_LOADING:",
-    "return { ...state, isLoading: action.payload };",
+    "  switch (action.type) { ",
     "${reducerCase}",
     "    default:",
     "return state;",
     "}};"
   ],
   "initRequest": [
-    "import { A_${name} } from '@actions/${name}Actions';import { axiosAuth } from '@axios/axiosAuth';import { isDev } from '@config';",
+    "import { A_${name} } from './reducer';import { axiosAuth } from '@axios/axiosAuth';import { isDev } from '@config';",
     "import { ${name}RequesthProps } from '${nameLower}-context';",
+    "",
     "export const ${requestName} = async ({ values, dispatch, setStatus }: ${name}RequesthProps) => {",
     "try { setStatus('LOADING');",
-    "{requestRoute}",
+    "// REQUEST DATA HERE",
     "setStatus('SUCCESS');",
     "} catch (error) {",
     "if (isDev) console.log('error', error);}};"

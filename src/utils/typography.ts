@@ -20,5 +20,5 @@ export const renameName = (data: string, target: string) => {
     .replaceAll("${nameUpper}", modifyCasing(target, "upper"));
 };
 export const renameDispatch = (name: string, target: string) => {
-  return `A_${modifyCasing(name, "upper")}.SET_${modifyCasing(target, "camelTo_")}`;
+  return `A_${modifyCasing(name, "upper")}.${modifyCasing(target, "camelTo_")}`;
 };
