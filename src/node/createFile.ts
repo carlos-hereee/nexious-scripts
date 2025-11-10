@@ -14,7 +14,7 @@ export const createFileIfNotExists = async (currentDir: string, filePath: string
     // If fs.access throws an error, it means the file does not exist
     if (error.code === "ENOENT") {
       await fs.writeFile(filePath, content);
-      console.log(`File '${filePath}' created successfully.`);
+      console.log(`File '${filePath}'==> created successfully.`);
     } else {
       console.error(`Error checking or creating file '${filePath}':`, error);
     }

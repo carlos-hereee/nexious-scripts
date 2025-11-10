@@ -17,5 +17,15 @@
     "const ${lowerCaseName}Values = useMemo(())=>{",
     "return ${contextValues} }, [${contextTriggers}]);",
     "return <${name}Context.Provider value={${lowerCaseName}Values}>{children}</${name}Context.Provider>);};"
+  ],
+  "initReducer": [
+    "import { A_${name} } from '@actions/${name}Actions';import { ${name}ActionProps, P${name}State } from '${lowerCaseName}-context';",
+    "export const reducer = (state: P${name}State, action: ${name}ActionProps): P${name}State => {",
+    "  switch (action.type) { case A_${name}.IS_LOADING:",
+    "return { ...state, isLoading: action.payload };",
+    "${reducerCase}",
+    "    default:",
+    "return state;",
+    "}};"
   ]
 }
