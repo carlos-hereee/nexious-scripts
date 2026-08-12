@@ -101,23 +101,58 @@ const referenced = new Set(apps.filter((a) => a.calendar).map((a) => String(a.ca
 // String() on both sides so a non-string uid (a Binary from an older seed) compares by value
 // rather than by identity and is caught rather than skipped.
 const drifted = [];
+const uidless = [];
+const contested = new Map();
 for (const app of apps) {
   if (!app.calendar) continue;
+
+  // ⚠️ AN APP WITH NO uid MUST BE SKIPPED, NOT HEALED. `$set: { appUid: app.uid }` with an
+  // undefined uid serializes as NULL through the driver, so healing here would blank the one
+  // field this script exists to repair, on exactly the apps that are already broken. These are
+  // the same documents backfill-app-uid.js targets, and it has to run FIRST: this script can
+  // only copy a uid that exists.
+  if (app.uid === undefined || app.uid === null || String(app.uid) === "") {
+    uidless.push(app);
+    continue;
+  }
+
   const cal = calById.get(String(app.calendar));
   if (!cal) {
     console.log(`DANGLING  ${app.appName} (uid=${app.uid}) -> App.calendar points at a calendar that does not exist. Left alone.`);
     continue;
   }
-  if (String(cal.appUid ?? "") !== String(app.uid ?? "")) {
+
+  // Two apps pointing at ONE calendar cannot both be right, and healing would just let the
+  // last loop iteration win silently. Report and touch neither.
+  const key = String(cal._id);
+  contested.set(key, [...(contested.get(key) ?? []), app]);
+
+  if (String(cal.appUid ?? "") !== String(app.uid)) {
     drifted.push({ app, cal });
   }
+}
+
+const contestedIds = new Set([...contested.entries()].filter(([, list]) => list.length > 1).map(([id]) => id));
+for (const id of contestedIds) {
+  const claimants = contested.get(id).map((a) => `${a.appName} (${a.uid})`).join(", ");
+  console.log(`CONTESTED calendar _id=${id} is referenced by MORE THAN ONE app: ${claimants}. Left alone.`);
+}
+const skippedContested = drifted.filter(({ cal }) => contestedIds.has(String(cal._id))).length;
+for (let i = drifted.length - 1; i >= 0; i -= 1) {
+  if (contestedIds.has(String(drifted[i].cal._id))) drifted.splice(i, 1);
 }
 
 const unreferenced = calendars.filter((c) => !referenced.has(String(c._id)));
 
 console.log(`apps: ${apps.length}   calendars: ${calendars.length}`);
 console.log(`calendars whose appUid disagrees with the app that references them: ${drifted.length}`);
-console.log(`calendars no app references (reported, NEVER touched): ${unreferenced.length}\n`);
+console.log(`calendars no app references (reported, NEVER touched): ${unreferenced.length}`);
+if (skippedContested) console.log(`drifted rows SKIPPED because two apps claim the calendar: ${skippedContested}`);
+if (uidless.length) {
+  console.log(`\n⚠️  apps with a calendar but NO uid of their own: ${uidless.length}. Run backfill-app-uid.js FIRST, then re-run this.`);
+  for (const a of uidless) console.log(`   ${a.appName}  _id=${a._id}`);
+}
+console.log("");
 
 for (const { app, cal } of drifted) {
   console.log(`  ${app.appName}`);
@@ -148,15 +183,26 @@ for (const { app, cal } of drifted) {
 }
 
 // Re-read rather than trusting the loop's own tally, so the "after" number is measured.
+//
+// ⚠️ THE RECOUNT MUST APPLY THE SAME SKIP RULES THE REPAIR DID, or a perfectly successful run
+// ends by reporting the uidless and contested rows as failures and printing a WARNING telling
+// the operator to investigate. That is how someone gets talked into re-running a --write script
+// on production because it looked like it had not worked.
 const after = await db.collection("calendars").find({}, { projection: { uid: 1, appUid: 1 } }).toArray();
 const afterById = new Map(after.map((c) => [String(c._id), c]));
 const stillDrifted = apps.filter((a) => {
   if (!a.calendar) return false;
+  if (a.uid === undefined || a.uid === null || String(a.uid) === "") return false;
+  if (contestedIds.has(String(a.calendar))) return false;
   const c = afterById.get(String(a.calendar));
-  return c && String(c.appUid ?? "") !== String(a.uid ?? "");
+  return c && String(c.appUid ?? "") !== String(a.uid);
 }).length;
 
-console.log(`\nBefore: ${drifted.length} drifted.  Healed: ${healed}.  After: ${stillDrifted} drifted.`);
+console.log(`\nBefore: ${drifted.length} healable.  Healed: ${healed}.  After: ${stillDrifted} healable.`);
+const deliberatelySkipped = uidless.length + contestedIds.size;
+if (deliberatelySkipped > 0) {
+  console.log(`Deliberately skipped and NOT counted above: ${uidless.length} uidless app(s), ${contestedIds.size} contested calendar(s).`);
+}
 if (stillDrifted > 0) console.log("WARNING: some rows did not heal. Investigate before re-running.");
 
 await client.close();
