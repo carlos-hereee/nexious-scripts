@@ -6,15 +6,21 @@
 //   npm run roll:sacred -- --month 2026-09               (roll into a named month)
 //   npm run roll:sacred -- --dry                         (print the plan, write nothing)
 //
+// SACRED_ROOT overrides the folder that CONTAINS SACRED_FILES, so the roll can be rehearsed
+// against a throwaway copy before it touches the real ledgers:
+//
+//   SACRED_ROOT=/tmp/sacred-rehearsal npm run roll:sacred -- --month 2026-10
+//
 // What it does, and why each part exists:
-//   1. Creates SACRED_FILES/<new-month>/ with FUTURE_PLANS.md, WIP.md and HISTORICAL.md.
-//   2. Carries the OPEN items forward from last month's FUTURE_PLANS, RENUMBERED FROM 1. Closed
+//   ① Creates SACRED_FILES/<new-month>/ with FUTURE_PLANS.md, WIP.md and HISTORICAL.md. The
+//      FUTURE_PLANS is written in PARTS when the carry is too large for one readable file.
+//   ② Carries the OPEN items forward from last month's FUTURE_PLANS, RENUMBERED FROM 1. Closed
 //      items stay in the month they closed in, which is what keeps the new file light.
-//   3. Writes the carry-over header: source month, that month's last number, and the full
+//   ③ Writes the carry-over header: source month, that month's last number, and the full
 //      old-to-new map. This is the cookie trail, and it is the whole reason this is a script
 //      rather than a checklist: a carried item that silently changes number turns every existing
 //      reference to it into a lie, and nobody notices until they follow one.
-//   4. Appends a row to the ID registry in SACRED_FILES/README.md.
+//   ④ Appends a row to the ID registry in SACRED_FILES/README.md.
 //
 // What it deliberately does NOT do:
 //   • Touch STATE.md or TECH_DEBT.md. They describe what is true NOW, so a monthly reset would
@@ -28,8 +34,24 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync, readdirSync } from 
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
-const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
+// SACRED_ROOT names the folder that CONTAINS SACRED_FILES, not SACRED_FILES itself. Without it the
+// only way to rehearse a roll was to run it for real on the live ledgers, which is the one thing a
+// script that renumbers stable ids should never make a person do to find out what it will write.
+const ROOT = process.env.SACRED_ROOT ?? join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const SACRED = join(ROOT, "SACRED_FILES");
+
+// ── Layout budget ──
+// BYTES, not item count, because rule 18's ceiling is about what a tool can read in one pass and
+// the items vary from a few hundred bytes to twenty-odd KB. The README sets the trigger for adding
+// a part at ~80KB and explains why: two parts that land AT the ceiling get pushed back over it
+// within hours, so a split that only just clears is a deferral rather than a fix. 70KB is the aim,
+// 80KB is the hard ceiling asserted after the files are built.
+const PART_BUDGET_BYTES = 70 * 1024;
+const PART_CEILING_BYTES = 80 * 1024;
+// The per-part boundary table is a handful of short rows, but it is written AFTER the split it
+// describes, so its exact size is not knowable while packing. Reserving for it is cheaper than a
+// fixed-point loop, and being 300 bytes pessimistic per part costs nothing.
+const BOUNDARY_TABLE_RESERVE = 700;
 
 const args = process.argv.slice(2);
 const dry = args.includes("--dry");
@@ -45,6 +67,29 @@ const monthFolders = () =>
     .filter((entry) => entry.isDirectory() && /^\d{4}-\d{2}$/.test(entry.name))
     .map((entry) => entry.name)
     .sort();
+
+// ── Parts ──
+// `FUTURE_PLANS.md` is part 1 and `FUTURE_PLANS-PART-<n>.md` is part n. The file name is the only
+// authority on which part a file is; nothing infers it from content.
+const PART_FILE = /^FUTURE_PLANS(?:-PART-(\d+))?\.md$/;
+const partNumberOfFile = (name) => {
+  const match = PART_FILE.exec(name);
+  return match && match[1] ? Number(match[1]) : 1;
+};
+const fileNameForPart = (n) => (n === 1 ? "FUTURE_PLANS.md" : `FUTURE_PLANS-PART-${n}.md`);
+
+/**
+ * Every FUTURE_PLANS part in a month folder, in part order.
+ *
+ * DISCOVERED, never listed. This used to be `FUTURE_PLANS.md` plus a hardcoded `[2, 3, 4, 5]`, and
+ * the failure mode of a hardcoded list is the exact one this script exists to prevent: the month a
+ * sixth part appears, the roll reads five, reports a plausible item count, and silently leaves the
+ * sixth part's open work behind in a month about to be sealed. A readdir cannot fall behind.
+ */
+const sourcePartFiles = (monthDir) =>
+  readdirSync(monthDir)
+    .filter((name) => PART_FILE.test(name))
+    .sort((a, b) => partNumberOfFile(a) - partNumberOfFile(b));
 
 /**
  * Split a FUTURE_PLANS body into its `## N. Title` items.
@@ -84,18 +129,54 @@ const parseItems = (body) => {
   return { preamble, items, lettered };
 };
 
+/** The item's first nonblank line after its heading. */
+const firstBodyLine = (text) => {
+  for (const line of text.split("\n").slice(1)) if (line.trim()) return line.trim();
+  return "";
+};
+
+/** The whole `**Status...` line, or "" when the item carries none. */
+const statusLine = (text) => text.split("\n").find((line) => /\*\*Status[.:]/.test(line)) ?? "";
+
+const CLOSED_STATUS_WORD = /^\*{0,2}(DONE|SHIPPED|MOOT|CLOSED|MOVED)\b/i;
+// A status that still asserts the work is not out yet. Matched on the WHOLE status line rather than
+// on its first 80 characters, and deliberately NOT stripped of `~~strikethrough~~` first: a status
+// carrying both "SHIPPED" and any flavour of "NOT deployed" is a complicated status, and a
+// complicated status is exactly the ambiguity this function is supposed to resolve by carrying.
+const UNDEPLOYED_CLAIM = /\bNOT\s+(?:yet\s+)?(?:deployed|pushed|merged|released|live|on\b)|\buncommitted\b/i;
+// A HISTORICAL stub: the item's body was moved out and a pointer left in its place.
+const MOVED_STUB = /^Moved to `?SACRED_FILES\//i;
+
 /**
  * Is this item CLOSED?
  *
- * Deliberately conservative: an item counts as closed only when its heading itself is struck
- * through or its status line opens with DONE/SHIPPED/MOOT. Anything ambiguous is carried FORWARD,
- * because wrongly carrying a closed item costs one line of clutter that a human deletes, while
- * wrongly dropping an open one loses tracked work silently. That asymmetry decides the default.
+ * Deliberately conservative: an item counts as closed only when its heading is struck through, its
+ * body has been MOVED OUT to HISTORICAL, or its status line opens with a closed word and makes no
+ * claim that the work is still undeployed. Anything ambiguous is carried FORWARD, because wrongly
+ * carrying a closed item costs one line of clutter that a human deletes, while wrongly dropping an
+ * open one loses tracked work silently. That asymmetry decides the default.
+ *
+ * Three things this has to get right, each learned from a real item in 2026-09:
+ *
+ * ① A MOVED stub has NO status line at all. Seven items (76, 86, 88, 91, 102, 110, 112) read
+ *    "Moved to `SACRED_FILES/2026-09/HISTORICAL.md` ..." and nothing else, so a status-only test
+ *    called every one of them open and the roll would have minted seven ghost items in the new
+ *    month, each a duplicate of work already filed as closed one folder away.
+ * ② Both `**Status.**` and `**Status:` are in use (87 items and 13 items respectively in 2026-09),
+ *    and a lookup that only knew the first spelling could never see the second.
+ * ③ Knowing the second spelling is what makes the undeployed guard necessary. Items 99, 107 and
+ *    119 all open with "SHIPPED" and all three go on to say NOT deployed, NOT pushed, or NOT yet on
+ *    the deploy branch. Under this project's law a week is history by DEPLOY STATE and never by
+ *    what a heading claims, so closing those three on the word "SHIPPED" would drop live work.
  */
 const isClosed = (item) => {
   if (/^~~.*~~/.test(item.title.trim())) return true;
-  const status = /\*\*Status\.\*\*\s*(.{0,80})/.exec(item.text);
-  return Boolean(status && /^\*{0,2}(DONE|SHIPPED|MOOT|CLOSED)\b/i.test(status[1].trim()));
+  if (MOVED_STUB.test(firstBodyLine(item.text))) return true;
+  const line = statusLine(item.text);
+  if (!line) return false;
+  if (UNDEPLOYED_CLAIM.test(line)) return false;
+  const status = /\*\*Status[.:]\*{0,2}\s*(.{0,80})/.exec(line);
+  return Boolean(status && CLOSED_STATUS_WORD.test(status[1].trim()));
 };
 
 const pad = (n) => String(n).padStart(2, "0");
@@ -103,6 +184,50 @@ const prevMonthOf = (month) => {
   const [y, m] = month.split("-").map(Number);
   return m === 1 ? `${y - 1}-12` : `${y}-${pad(m - 1)}`;
 };
+const bytes = (text) => Buffer.byteLength(text, "utf8");
+
+/**
+ * Pack the carried bodies into parts by BYTES, cutting on item boundaries only.
+ *
+ * Greedy and therefore contiguous, which is the point: a part is an ITEM RANGE, never a theme. A
+ * themed split makes filing a new item a judgement call and judgement calls drift, while "items 25
+ * to 48" is mechanical. Part 1 gets a smaller item budget because it also carries the whole
+ * carry-forward map, which is the mistake the first 2026-08 split made by balancing on item count.
+ */
+const packParts = (bodies, firstPartOverhead, laterPartOverhead) => {
+  const parts = [];
+  let current = [];
+  let used = 0;
+  let budget = PART_BUDGET_BYTES - firstPartOverhead;
+  for (const body of bodies) {
+    const cost = bytes(body) + (current.length ? 2 : 0); // the blank line between two items
+    // An item larger than a whole budget still gets its own part rather than being split: an item
+    // is the atom here, and cutting one in half would break the heading-to-body relationship every
+    // other tool in this repo relies on.
+    if (current.length && used + cost > budget) {
+      parts.push(current);
+      current = [];
+      used = 0;
+      budget = PART_BUDGET_BYTES - laterPartOverhead;
+    }
+    current.push(body);
+    used += current.length === 1 ? bytes(body) : cost;
+  }
+  if (current.length) parts.push(current);
+  return parts;
+};
+
+/** The "which part is an item in" table, repeated in every part so no part is a dead end. */
+const boundaryTable = (ranges) =>
+  [
+    "## Which part is an item in?",
+    "",
+    "| Part | Items | File |",
+    "|---|---|---|",
+    ...ranges.map(
+      (range, i) => `| ${i + 1} | ${range.from} to ${range.to} | \`${fileNameForPart(i + 1)}\` |`,
+    ),
+  ].join("\n");
 
 const main = () => {
   if (!existsSync(SACRED)) {
@@ -121,16 +246,13 @@ const main = () => {
     process.exit(1);
   }
 
-  // A month's FUTURE_PLANS may be SPLIT ACROSS PARTS. 2026-08 was split on 2026-08-07 by owner
-  // decision, because one file had reached ~50k tokens against rule 18's 25k ceiling: part 1 holds
-  // items 1 to 50, `FUTURE_PLANS-PART-2.md` holds 51 and up. Reading only part 1 would carry the
-  // low-numbered half forward and SILENTLY DROP the rest, which is the kind of loss this script
-  // exists to prevent. Parts are read in order and concatenated, so item order and numbering are
-  // exactly what a single file would have produced.
-  const sourceParts = [
-    join(SACRED, source, "FUTURE_PLANS.md"),
-    ...[2, 3, 4, 5].map((n) => join(SACRED, source, `FUTURE_PLANS-PART-${n}.md`)),
-  ].filter((path) => existsSync(path));
+  // A month's FUTURE_PLANS may be SPLIT ACROSS PARTS, and how many parts is not knowable in
+  // advance: 2026-08 was split three ways and 2026-09 grew to six. Reading a fixed list would carry
+  // the low-numbered part forward and SILENTLY DROP the rest, which is the kind of loss this script
+  // exists to prevent. Parts are discovered, read in order and concatenated, so item order and
+  // numbering are exactly what a single file would have produced.
+  const sourceDir = join(SACRED, source);
+  const sourceParts = sourcePartFiles(sourceDir).map((name) => join(sourceDir, name));
   if (!sourceParts.length) {
     console.error(`roll-sacred: ${source} has no FUTURE_PLANS.md to carry from.`);
     process.exit(1);
@@ -171,18 +293,13 @@ const main = () => {
   console.log(`  items in ${source}: ${items.length} (last number ${lastNumber})`);
   console.log(`  carrying forward: ${open.length}`);
   console.log(`  leaving closed in ${source}: ${items.length - open.length}`);
-  if (dry) {
-    mapRows.forEach((row) => console.log(`    ${source} item ${row.from}  ->  ${targetMonth} item ${row.to}`));
-    console.log("  (dry run, nothing written)");
-    return;
-  }
 
-  mkdirSync(targetDir, { recursive: true });
+  // ── Lay the carry out across parts ──
+  // Done before the dry-run return so `--dry` reports the file layout it would write, which is the
+  // half of the plan a person most wants to see before letting it run for real.
+  const carriedBodies = open.map((item, i) => item.text.replace(/^##\s+\d+\./, `## ${i + 1}.`));
 
-  // ── FUTURE_PLANS ──
-  const header = [
-    `# Future plans — ${targetMonth}`,
-    "",
+  const mapBlock = [
     `> ## Carried forward from ${source}`,
     ">",
     `> **Item numbers restart at 1 in this file.** A number only means something together with its month, so write \`${targetMonth} item 3\`, never a bare \`item 3\`.`,
@@ -194,15 +311,71 @@ const main = () => {
     ...mapRows.map((row) => `> | ${source} item ${row.from} | **${targetMonth} item ${row.to}** | ${row.title} |`),
     ">",
     `> Anything written before this roll that cites a bare item number means a ${source}-or-earlier number. See \`SACRED_FILES/README.md\` for the full registry.`,
-    "",
-    "---",
-    "",
   ].join("\n");
 
-  const carried = open
-    .map((item, i) => item.text.replace(/^##\s+\d+\./, `## ${i + 1}.`))
-    .join("\n\n");
-  writeFileSync(join(targetDir, "FUTURE_PLANS.md"), `${header}${carried}\n`, "utf8");
+  const titleLine = `# Future plans — ${targetMonth}`;
+  const laterPartNote = (n, from, to) =>
+    `> **This is part ${n} of ${targetMonth}'s FUTURE_PLANS, and a PART IS NOT A FORK.** It holds items ${from} to ${to} and duplicates nothing. The old-to-new carry-forward map covering every item in every part lives in part 1's header, \`FUTURE_PLANS.md\`, and nowhere else.`;
+
+  // Overheads are what each part spends on header text before a single item body lands in it.
+  const firstPartOverhead = bytes(`${titleLine}\n\n${mapBlock}\n\n`) + BOUNDARY_TABLE_RESERVE + 16;
+  const laterPartOverhead = bytes(`${titleLine} (part 9)\n\n${laterPartNote(9, 999, 999)}\n\n`) + BOUNDARY_TABLE_RESERVE + 16;
+
+  const packed = packParts(carriedBodies, firstPartOverhead, laterPartOverhead);
+  const ranges = [];
+  let cursor = 1;
+  for (const part of packed) {
+    ranges.push({ from: cursor, to: cursor + part.length - 1 });
+    cursor += part.length;
+  }
+  const table = boundaryTable(ranges);
+
+  const partFiles = packed.map((part, i) => {
+    const n = i + 1;
+    const head =
+      n === 1
+        ? [titleLine, "", mapBlock, "", table, "", "---", "", ""].join("\n")
+        : [
+            `${titleLine} (part ${n})`,
+            "",
+            laterPartNote(n, ranges[i].from, ranges[i].to),
+            "",
+            table,
+            "",
+            "---",
+            "",
+            "",
+          ].join("\n");
+    return { name: fileNameForPart(n), content: `${head}${part.join("\n\n")}\n`, range: ranges[i] };
+  });
+
+  console.log(`  writing ${partFiles.length} FUTURE_PLANS part(s):`);
+  for (const file of partFiles) {
+    console.log(
+      `    ${file.name.padEnd(24)} items ${String(file.range.from).padStart(3)} to ${String(file.range.to).padStart(3)}  ${(bytes(file.content) / 1024).toFixed(1)} KB`,
+    );
+  }
+
+  if (dry) {
+    mapRows.forEach((row) => console.log(`    ${source} item ${row.from}  ->  ${targetMonth} item ${row.to}`));
+    console.log("  (dry run, nothing written)");
+    return;
+  }
+
+  // A part over the ceiling is the failure the split exists to prevent, so it is asserted on the
+  // BUILT bytes rather than trusted from the packing arithmetic.
+  const oversized = partFiles.filter((file) => bytes(file.content) > PART_CEILING_BYTES);
+  if (oversized.length) {
+    console.error(`roll-sacred: ${oversized.length} part(s) came out over the ${PART_CEILING_BYTES / 1024}KB ceiling:`);
+    for (const file of oversized) console.error(`  ${file.name}  ${(bytes(file.content) / 1024).toFixed(1)} KB`);
+    console.error("  Lower PART_BUDGET_BYTES, or split the oversized item's body out to roadmaps/ first.");
+    process.exit(1);
+  }
+
+  mkdirSync(targetDir, { recursive: true });
+
+  // ── FUTURE_PLANS ──
+  for (const file of partFiles) writeFileSync(join(targetDir, file.name), file.content, "utf8");
 
   // ── WIP ──
   // Seeded empty on purpose: last month's weeks stay in last month's file until DEPLOY STATE says
@@ -237,15 +410,31 @@ const main = () => {
   );
 
   // ── ID registry ──
+  // Anchored to an explicit `<!-- ID-REGISTRY-END -->` comment sitting under the table's last row.
+  // The old anchor was the "## Rotation inside a month" heading that happens to follow the table,
+  // which made the insert point a fact about an unrelated section: retitle or reorder that section
+  // and the roll appends the row to the very end of the README, outside the table, where it renders
+  // as a stray line of pipes and answers "where did item 93 go" for nobody. The heading lookup is
+  // kept as a loud fallback so an older README still rolls.
   const readmePath = join(SACRED, "README.md");
   const readme = readFileSync(readmePath, "utf8");
   const row = `| ${source} | 1 to ${lastNumber} | ${open.length} open items carried into ${targetMonth} and renumbered from 1; the map is in that file's header. |`;
-  const marker = "\n\n---\n\n## Rotation inside a month";
-  writeFileSync(
-    readmePath,
-    readme.includes(marker) ? readme.replace(marker, `\n${row}${marker}`) : `${readme}\n${row}\n`,
-    "utf8",
-  );
+  const registryEnd = "<!-- ID-REGISTRY-END -->";
+  const headingMarker = "\n\n---\n\n## Rotation inside a month";
+  let updatedReadme;
+  if (readme.includes(registryEnd)) {
+    updatedReadme = readme.replace(registryEnd, `${row}\n${registryEnd}`);
+  } else if (readme.includes(headingMarker)) {
+    console.warn(
+      `  WARNING: ${registryEnd} is missing from SACRED_FILES/README.md; fell back to the "## Rotation inside a month" heading.`,
+    );
+    console.warn("  Add the marker under the ID registry table's last row so the next roll does not depend on a heading.");
+    updatedReadme = readme.replace(headingMarker, `\n${row}${headingMarker}`);
+  } else {
+    console.warn(`  WARNING: neither ${registryEnd} nor the rotation heading was found; appended the registry row to the end of the README.`);
+    updatedReadme = `${readme}\n${row}\n`;
+  }
+  writeFileSync(readmePath, updatedReadme, "utf8");
 
   console.log(`  wrote ${targetDir}`);
   console.log(`  appended the ${source} row to the ID registry`);
