@@ -1,31 +1,49 @@
 {
   "name": "nexious-scripts",
   "version": "1.0.0",
-  "description": "",
+  "description": "Codegen, filesystem, and random-string scripts for the nexious ecosystem.",
   "main": "dist/main.js",
   "type": "module",
+  "bin": {
+    "nexious-random": "dist/bin/random.js",
+    "nexious-context": "dist/codegen/generateContext.js"
+  },
   "scripts": {
-    "watch:1": "tsc -p tsconfig.json --watch",
-    "watch:2": "tsc-alias -p tsconfig.json --watch",
-    "watch:lint": "eslint \"src/**/*.{js,ts}\"",
-    "pretty": "npx prettier --write src/",
-    "generateContext": "node dist/react/generateContext",
+    "build": "npm run clean && npm run compile",
     "clean": "rimraf dist/ && npx prettier --write src/",
     "compile": "npm run compile:tsc && npm run compile:tsc-alias",
     "compile:tsc": "tsc -p tsconfig.json",
-    "compile:cjs": "tsc --module commonjs --outDir dist/cjs",
-    "compile:tsc-alias": "tsc-alias -p tsconfig.json dist/esm",
-    "pre-build": "npm unlink nexious-scripts && npm run clean && npm run compile",
-    "build": "npm run clean && npm run compile",
-    "build:alias": "npm run clean && npm run compile:alias",
+    "compile:tsc-alias": "tsc-alias -p tsconfig.json",
+    "watch:ts": "tsc -p tsconfig.json --watch",
+    "watch:alias": "tsc-alias -p tsconfig.json --watch",
+    "watch:lint": "eslint \"src/**/*.{js,ts}\"",
+    "pretty": "npx prettier --write src/",
+    "generateContext": "node dist/codegen/generateContext.js",
+    "random": "node dist/bin/random.js",
+    "dedupe:roadmaps": "node scripts/dedupe-roadmaps.mjs",
+    "refresh:graphs": "node scripts/refresh-graphs.mjs",
+    "roll:sacred": "node scripts/roll-sacred.mjs",
+    "extract:assets": "node scripts/asset-extractor/asset-extractor.mjs",
+    "test": "node --import tsx --test src/**/*.test.ts",
     "release:patch": "npm run build && npm version patch && npm publish",
     "release:minor": "npm run build && npm version minor && npm publish",
     "release:major": "npm run build && npm version major && npm publish",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "heal:calendar-app-uid": "node scripts/heal-calendar-app-uid.mjs"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "files": [
+    "dist",
+    "src/random/ports"
+  ],
+  "keywords": [
+    "codegen",
+    "scripts",
+    "random",
+    "uuid",
+    "unique-id",
+    "nexious"
+  ],
+  "author": "qwerty <97hernandez.c@gmail.com> (https://www.companyuno.com)",
+  "license": "MIT",
   "devDependencies": {
     "@eslint/compat": "^1.1.1",
     "@eslint/eslintrc": "^3.1.0",
@@ -38,7 +56,9 @@
     "eslint-import-resolver-typescript": "^3.6.3",
     "eslint-plugin-prettier": "^5.2.1",
     "prettier": "^3.3.3",
+    "rimraf": "^6.0.1",
     "tsc-alias": "^1.8.10",
+    "tsx": "^4.19.0",
     "typescript": "^5.5.4"
   }
 }

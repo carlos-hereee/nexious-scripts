@@ -1,10 +1,4 @@
-require_pattern() {
-    # Check if second argument is provided
-    if [ -z "$pattern" ]; then
-        echo "Error Occured:  second argument is not provided"
-        echo "Old file extension name is $pattern"
-        echo "Posible Fix: change value to desired schema 'jsx' or similar"
-        # Exit Code 1: This is often used to indicate a general error.
-        return 1
-    fi
-}
+#!/usr/bin/env bash
+# DEPRECATED: duplicate of require_pattern.sh (the canonical snake_case version).
+# Source the other file directly. See requirePath.sh for the migration note.
+source "$(dirname "${BASH_SOURCE[0]}")/require_pattern.sh"

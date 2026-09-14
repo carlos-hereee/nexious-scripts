@@ -1,9 +1,15 @@
+// DEPRECATED: the ambient `declare module "file-paths"` approach was replaced on
+// 2026-04-21 with explicit named exports from `src/fs/fs.types.ts`. This file is kept
+// so any existing import that still references the "file-paths" module keeps type-
+// checking during the transition. Delete after one release cycle.
+//
+// New usage:
+//   import type { IAuthorsPen, MessageData } from "@fs/fs.types.js";
+
 declare module "file-paths" {
   export type ErrorName = "notFound" | "badRequest" | "success" | "skipped";
-
   export type StatusPhaseCode = 404 | 202 | 400 | number;
   export interface MessageData {
-    // skippedFiles: string[];
     message: string;
     status: string;
     code: StatusPhaseCode;
@@ -15,7 +21,6 @@ declare module "file-paths" {
   export interface IUpdateFile {
     filePath: string;
     pattern: string;
-
     isModified?: boolean;
     cb: (e: unknown) => void;
   }

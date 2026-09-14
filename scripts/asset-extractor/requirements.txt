@@ -1,0 +1,22 @@
+# Scene Asset Extractor dependencies.
+#
+# Install into this folder before the first run:
+#     pip install -r requirements.txt
+#
+# IMPORTANT: torch and torchvision must come from the SAME build channel, or the
+# compiled ops (torchvision::nms and friends) will not register and transformers
+# will fail to import its image processors. For a CPU only machine, install both
+# from the PyTorch CPU channel first, then the rest:
+#     pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+#     pip install -r requirements.txt
+# On a CUDA box, drop the index url and let pip pull the default GPU wheels.
+
+torch>=2.2
+torchvision>=0.17
+transformers>=4.40
+timm>=0.9
+safetensors>=0.4
+huggingface_hub>=0.23
+pillow>=10.0
+numpy>=1.24
+opencv-python-headless>=4.9

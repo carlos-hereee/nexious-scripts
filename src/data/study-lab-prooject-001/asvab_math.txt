@@ -1,0 +1,2893 @@
+Lesson 1
+a. In the expression 3², the small raised "2" is called an exponent — it tells you to multiply 3 by itself 2 times (3 × 3). In the expression 5³, what is the exponent?
+1. 5
+2. 3  ✓ Correct
+3. 5³
+4. 15
+Feedback: Right! The exponent is 3, which means 5 × 5 × 5. Now let's look at the other symbol type: parentheses. In the expression (2 + 3) × 4, the numbers 2 and 3 are grouped inside parentheses. What does that tell us to do?
+b. In (2 + 3) × 4, the (2 + 3) is grouped inside parentheses. According to PEMDAS, what should we do with the parentheses?
+1. Ignore them
+2. Solve what's inside them first  ✓ Correct
+3. Multiply them by 4 first
+4. Save them for last
+Feedback: Exactly! Parentheses always get solved first, before anything else in the problem. Now that you know what parentheses and exponents look like, let's learn the full order. When dealing with a problem that has parentheses, exponents, multiplication/division, AND addition/subtraction, which part should you focus on first?
+c. Which part of a math problem should you always solve first? Remember, PEMDAS.
+1. Exponents
+2. Addition/Subtraction
+3. Parentheses  ✓ Correct
+4. Multiplication/Division
+Feedback: Great! What comes next, after Parentheses? Remember, PEMDAS.
+d. After Parentheses, what comes next? Remember, PEMDAS.
+1. Exponents  ✓ Correct
+2. Addition/Subtraction
+3. Parentheses
+4. Multiplication/Division
+Feedback: Great! What comes next, after Exponents? Remember, PEMDAS.
+e. After Exponents, what comes next? Remember, PEMDAS.
+1. Exponents
+2. Addition/Subtraction
+3. Parentheses
+4. Multiplication/Division  ✓ Correct
+Feedback: Great! What is the very last step? Remember, PEMDAS.
+f. What is the last step in PEMDAS?
+1. Exponents
+2. Addition/Subtraction  ✓ Correct
+3. Parentheses
+4. Multiplication/Division
+Feedback: Awesome — you know the full order now: Parentheses, Exponents, Multiplication/Division, Addition/Subtraction. Let's use it on a real problem: 3 + 2 × 5. What is the first part of this problem we should evaluate?
+g. For the problem 3 + 2 × 5, what should we evaluate first? (Hint: there are no parentheses or exponents here — only addition and multiplication.)
+1. Exponents
+2. Addition/Subtraction
+3. Parentheses
+4. Multiplication/Division  ✓ Correct
+Feedback: Correct! Since there are no parentheses or exponents, multiplication comes first. What is 2 × 5?
+h. What is 2 × 5?
+1. 7
+2. 10  ✓ Correct
+3. 25
+4. 52
+Feedback: Right! Now we replace "2 × 5" with 10, leaving us with 3 + 10. What's the next (and last) step?
+i. For 3 + 10, what's the next step?
+1. Exponents
+2. Addition/Subtraction  ✓ Correct
+3. Parentheses
+4. Multiplication/Division
+Feedback: Right! What is 3 + 10?
+j. What is 3 + 10?
+1. 15
+2. 13  ✓ Correct
+3. 8
+4. 30
+Feedback: Perfect! 3 + 2 × 5 = 13. Let's step it up with a harder problem: 6 × 3 + 5 − (2 − 1)². What should we evaluate first?
+k. For 6 × 3 + 5 − (2 − 1)², what should we evaluate first? Remember, parentheses always go first.
+1. Exponents
+2. Addition/Subtraction
+3. Parentheses: (2 − 1)  ✓ Correct
+4. Multiplication/Division
+Feedback: Spot on! Solving inside the parentheses: 2 − 1 = 1. Substituting that back in, we now have: 6 × 3 + 5 − 1². What's the next step? (Hint: look for the exponent.)
+l. For 6 × 3 + 5 − 1², what's the next step?
+1. Exponents: 1²  ✓ Correct
+2. Addition/Subtraction
+3. Parentheses
+4. Multiplication/Division
+Feedback: Exactly! 1² means 1 × 1 = 1. Substituting that back in, we now have: 6 × 3 + 5 − 1. What's the next step?
+m. For 6 × 3 + 5 − 1, what's the next step?
+1. Exponents
+2. Addition/Subtraction
+3. Parentheses
+4. Multiplication/Division: 6 × 3  ✓ Correct
+Feedback: Yes! 6 × 3 = 18. Substituting that back in, we now have: 18 + 5 − 1. What's the final step?
+n. For 18 + 5 − 1, what's the final step, and what is the answer? (Hint: work left to right — add first, then subtract.)
+1. 18 + 5 = 23, then 23 − 1 = 22  ✓ Correct
+2. 5 − 1 = 4, then 18 + 4 = 22
+3. 18 − 5 = 13, then 13 + 1 = 14
+4. 18 + 5 − 1 cannot be solved left to right
+Feedback: Great job — both orders of adding/subtracting left to right actually give the same answer here, 22, since addition and subtraction are done together, left to right. So 6 × 3 + 5 − (2 − 1)² = 22. Let's move on to some practice problems.
+Verification
+o. Let's work through 4 + 3 × (6 − 2) together. What should we evaluate first?
+1. Exponents
+2. Addition/Subtraction
+3. Parentheses: (6 − 2)  ✓ Correct
+4. Multiplication/Division
+Feedback: Right! Inside the parentheses, 6 − 2 = 4. Substituting that back in, we have 4 + 3 × 4. What's next?
+p. For 4 + 3 × 4, what's the next step?
+1. Exponents
+2. Addition/Subtraction
+3. Parentheses
+4. Multiplication/Division: 3 × 4  ✓ Correct
+Feedback: Exactly. 3 × 4 = 12. Substituting back in, we have 4 + 12. What's the last step?
+q. What is 4 + 12?
+1. 8
+2. 16  ✓ Correct
+3. 48
+4. 7
+Feedback: You've got it! 4 + 12 = 16. So 4 + 3 × (6 − 2) = 16.
+r. Now let's try 2² + (8 − 5) × 3. Parentheses always come first, no matter where else exponents appear in the problem. What is 8 − 5?
+1. 2
+2. 3  ✓ Correct
+3. 13
+4. 5
+Feedback: Correct! 8 − 5 = 3. Substituting back in, we have 2² + 3 × 3. What should we evaluate next — the exponent or the multiplication?
+s. For 2² + 3 × 3, exponents come before multiplication in PEMDAS. What is 2² (2 × 2)?
+1. 4  ✓ Correct
+2. 2
+3. 22
+4. 6
+Feedback: Right! 2² = 4. Substituting back in, we have 4 + 3 × 3. What's next?
+t. For 4 + 3 × 3, what's the next step?
+1. Exponents
+2. Addition/Subtraction
+3. Parentheses
+4. Multiplication: 3 × 3  ✓ Correct
+Feedback: Yes! 3 × 3 = 9. Substituting back in, we have 4 + 9 = 13. So 2² + (8 − 5) × 3 = 13. Great work — you're ready for the quiz!
+Quiz
+u. Evaluate: 5 + 2 × 3
+1. 21
+2. 11  ✓ Correct
+3. 17
+4. 13
+v. Evaluate: (7 − 4) × 2²
+1. 12  ✓ Correct
+2. 22
+3. 24
+4. 42
+w. Evaluate: 10 − 3² + 4
+1. 5  ✓ Correct
+2. 45
+3. 63
+4. 11
+x. What is the first operation to perform in: 6 × (5 − 2) + 8?
+1. Multiply 6 × 5
+2. Subtract 5 − 2  ✓ Correct
+3. Add 2 + 8
+4. Multiply 6 × 8
+y. Evaluate: 3 + 4 × (9 − 6) ÷ 2
+1. 8
+2. 9  ✓ Correct
+3. 10.5
+4. 21
+
+Lesson 2
+a. In the fraction 3/8, which number tells you how many total equal pieces the pizza was cut into?
+1. 3
+2. 8  ✓ Correct
+3. Both numbers
+4. Neither number
+Feedback: Right! 8 is the denominator — the total number of equal pieces. 3 is the numerator — how many pieces you have. Let's practice simplifying fractions. A fraction is in "lowest terms" when the numerator and denominator have no common factor left except 1.
+b. Simplify 4/8 to lowest terms. What number divides evenly into both 4 and 8?
+1. 2
+2. 3
+3. 4  ✓ Correct
+4. 8
+Feedback: Exactly! Divide the top and bottom both by 4: 4÷4 = 1, and 8÷4 = 2. So 4/8 simplifies to 1/2.
+c. What is 6/9 simplified to lowest terms?
+1. 3/4
+2. 2/3  ✓ Correct
+3. 1/2
+4. 6/9 (already simplest)
+Feedback: Correct! Dividing top and bottom by 3 gives 2/3. Now let's add fractions. When two fractions already share the same denominator, you just add the numerators and keep the denominator the same.
+d. What is 2/7 + 3/7?
+1. 5/14
+2. 5/7  ✓ Correct
+3. 6/7
+4. 1/7
+Feedback: Right! Since the denominators match, just add the tops: 2 + 3 = 5, so the answer is 5/7. But what if the denominators are different, like 1/4 + 1/3? First, you need to find a common denominator — a number both denominators divide into evenly. For 4 and 3, that number is 12.
+e. To add 1/4 + 1/3, we need a common denominator — a number both 4 and 3 divide into evenly. That number is 12. Here's an important rule: if you multiply the TOP and BOTTOM of a fraction by the same number, its value doesn't change (it's still the same amount, just cut into more pieces). Since 1/4 × 3/3 = 3/12, and 1/3 × 4/4 = 4/12, we can rewrite the problem as 3/12 + 4/12. What is 3/12 + 4/12?
+1. 4/24
+2. 7/24
+3. 7/12  ✓ Correct
+4. 1/3
+Feedback: Exactly! 3/12 + 4/12 = 7/12. Now let's multiply fractions — this one's actually simpler. To multiply fractions, multiply the top numbers together, then multiply the bottom numbers together.
+f. What is 2/3 × 3/5?
+1. 5/8
+2. 6/15, which simplifies to 2/5  ✓ Correct
+3. 6/8
+4. 2/3
+Feedback: Correct! 2×3 = 6 on top, 3×5 = 15 on bottom, giving 6/15, which simplifies to 2/5. Finally, dividing fractions: flip the second fraction upside down (find its reciprocal), then multiply.
+g. To divide 1/2 ÷ 1/4, we flip 1/4 to get 4/1, then multiply: 1/2 × 4/1. What is 1/2 × 4/1?
+1. 1/8
+2. 4/2, which equals 2  ✓ Correct
+3. 5/6
+4. 4/8
+Feedback: Nice work! 1×4 = 4 on top, 2×1 = 2 on bottom, giving 4/2 = 2. So 1/2 ÷ 1/4 = 2. That makes sense — there are 2 quarters in a half! You've covered the basics of fractions. Let's practice a couple of full problems.
+Verification
+h. Before we add 2/6 + 1/3, let's simplify 2/6 first. What does 2/6 simplify to?
+1. 1/2
+2. 1/3  ✓ Correct
+3. 2/3
+4. 1/4
+Feedback: Right! 2/6 simplifies to 1/3 (divide top and bottom by 2). Now the problem is 1/3 + 1/3. Since the denominators already match, what do we do?
+i. For 1/3 + 1/3, what is the answer?
+1. 2/6
+2. 2/3  ✓ Correct
+3. 1/3
+4. 2/9
+Feedback: Exactly! Add the numerators: 1 + 1 = 2, keep the denominator: 2/3. So 2/6 + 1/3 = 2/3.
+j. For 3/4 × 2/3, what do we multiply first?
+1. The numerators together, and the denominators together  ✓ Correct
+2. The numerators together, keep the denominators separate
+3. Add the numerators
+4. Find a common denominator first
+Feedback: Right! Multiply straight across: numerator × numerator, denominator × denominator. What is 3 × 2, and what is 4 × 3?
+k. 3 × 2 = 6 and 4 × 3 = 12, giving us 6/12. What does 6/12 simplify to?
+1. 1/3
+2. 2/3
+3. 1/2  ✓ Correct
+4. 3/4
+Feedback: You've got it! 6/12 simplifies to 1/2 (divide top and bottom by 6). So 3/4 × 2/3 = 1/2. Great work — you're ready for the quiz!
+Quiz
+l. Simplify 8/12 to lowest terms.
+1. 4/6
+2. 2/3  ✓ Correct
+3. 3/4
+4. 1/2
+m. What is 3/8 + 2/8?
+1. 5/16
+2. 5/8  ✓ Correct
+3. 6/8
+4. 1/8
+n. What is 1/2 + 1/3?
+1. 2/5
+2. 1/6
+3. 5/6  ✓ Correct
+4. 2/6
+o. What is 2/5 × 5/6?
+1. 10/30, which simplifies to 1/3  ✓ Correct
+2. 7/11
+3. 10/6
+4. 2/6
+p. What is 3/4 ÷ 1/2?
+1. 3/8
+2. 1 1/2  ✓ Correct
+3. 3/4
+4. 2/3
+
+Lesson 3
+a. In the number 3.42, which digit is in the hundredths place?
+1. 3
+2. 4
+3. 2  ✓ Correct
+4. There is no hundredths place here
+Feedback: Right! The first digit after the decimal point (4) is tenths, and the second digit (2) is hundredths. Now let's add decimals. The key trick is to line up the decimal points before you add.
+b. To add 2.5 + 1.75, why is it important to line up the decimal points first?
+1. So the tenths line up with tenths and hundredths line up with hundredths  ✓ Correct
+2. It isn't important, decimals can be added in any order
+3. So the numbers look neater
+4. Because decimals can't actually be added
+Feedback: Exactly! Lining up the decimal points keeps each place value adding correctly. 2.5 is the same as 2.50. So 2.50 + 1.75 = 4.25.
+c. What is 4.2 − 1.5?
+1. 3.3
+2. 2.7  ✓ Correct
+3. 2.3
+4. 5.7
+Feedback: Correct! 4.2 − 1.5 = 2.7. Now let's multiply decimals. Multiply the numbers as if there were no decimal points, then count the total decimal places in both original numbers and place the decimal point that many spots from the right in your answer.
+d. To multiply 1.2 × 0.4, first ignore the decimals: 12 × 4 = 48. Both original numbers together have 2 decimal places total (one each). Where does the decimal point go in 48 to give the final answer?
+1. 4.8
+2. 0.48  ✓ Correct
+3. 48.0
+4. 0.048
+Feedback: Exactly! Counting 2 places from the right in 48 gives 0.48. So 1.2 × 0.4 = 0.48. Now for dividing decimals: if the number you're dividing by has a decimal, move its decimal point right until it's a whole number, then move the other number's decimal point the same number of spots.
+e. To divide 6.4 ÷ 0.8, we move both decimal points one spot right, turning it into 64 ÷ 8. What is 64 ÷ 8?
+1. 7
+2. 8  ✓ Correct
+3. 6
+4. 9
+Feedback: Right! 64 ÷ 8 = 8, so 6.4 ÷ 0.8 = 8. Last skill: converting between decimals and fractions. To turn a decimal into a fraction, read it out loud — "0.6" is "six tenths," which is 6/10.
+f. What fraction (in lowest terms) equals 0.25?
+1. 25/100, which simplifies to 1/4  ✓ Correct
+2. 1/25
+3. 1/2
+4. 25/10
+Feedback: Great! 0.25 is "25 hundredths," or 25/100, which simplifies to 1/4. You've now covered all the core decimal skills — let's verify what you've learned.
+Verification
+g. To add 5.75 + 2.4, we first line up the decimal points. Writing 2.4 as 2.40, what do we add in the hundredths column: 5 + 0?
+1. 5  ✓ Correct
+2. 0
+3. 9
+4. 4
+Feedback: Right, 5 + 0 = 5 in the hundredths place. Now let's finish: what is 5.75 + 2.40 in total?
+h. What is 5.75 + 2.40?
+1. 8.15  ✓ Correct
+2. 7.79
+3. 8.05
+4. 7.15
+Feedback: You've got it! 5.75 + 2.40 = 8.15.
+i. For 3.6 × 0.5, first ignore the decimal points: what is 36 × 5?
+1. 180  ✓ Correct
+2. 175
+3. 185
+4. 40
+Feedback: Right, 36 × 5 = 180. Now, 3.6 has 1 decimal place and 0.5 has 1 decimal place, for 2 total. Where does the decimal point go in 180?
+j. Counting 2 places from the right in 180, what is the final answer?
+1. 18.0
+2. 1.80  ✓ Correct
+3. 0.180, written the same as 1.80
+4. 180.0
+Feedback: Exactly! 3.6 × 0.5 = 1.80, or just 1.8. Great work — you're ready for the quiz!
+Quiz
+k. What is 6.25 + 3.5?
+1. 9.75  ✓ Correct
+2. 9.60
+3. 6.60
+4. 10.75
+l. What is 8.4 − 2.75?
+1. 6.35
+2. 5.65  ✓ Correct
+3. 6.65
+4. 5.35
+m. What is 2.5 × 0.2?
+1. 5.0
+2. 0.5  ✓ Correct
+3. 0.05
+4. 50.0
+n. What is 9.6 ÷ 0.4?
+1. 2.4
+2. 24  ✓ Correct
+3. 0.24
+4. 240
+o. What fraction (in lowest terms) equals 0.4?
+1. 4/10
+2. 2/5  ✓ Correct
+3. 1/4
+4. 4/100
+
+Lesson 4
+a. What is 40% written as a decimal?
+1. 4.0
+2. 0.40  ✓ Correct
+3. 0.04
+4. 40.0
+Feedback: Right! Moving the decimal point two places left in 40 gives 0.40. To turn a percent into a fraction, put the number over 100 and simplify.
+b. What is 25% written as a fraction in lowest terms?
+1. 25/100
+2. 1/4  ✓ Correct
+3. 1/25
+4. 4/25
+Feedback: Exactly! 25/100 simplifies to 1/4. Now let's find a percent of a number. To find "20% of 50," change 20% to a decimal (0.20) and multiply.
+c. What is 20% of 50? (Hint: 0.20 × 50)
+1. 5
+2. 100
+3. 10  ✓ Correct
+4. 20
+Feedback: Correct! 0.20 × 50 = 10. So 20% of 50 is 10. Let's try one more: what is 50% of 80?
+d. What is 50% of 80? (Hint: 0.50 × 80)
+1. 30
+2. 50
+3. 40  ✓ Correct
+4. 8
+Feedback: Nice! 0.50 × 80 = 40. Now let's learn percent increase and decrease. The formula is: percent change = amount of change ÷ original number.
+e. A shirt's price goes from $20 to $25. What is the "amount of change"?
+1. $20
+2. $25
+3. $5  ✓ Correct
+4. $45
+Feedback: Right! $25 − $20 = $5 is the amount of change. Now divide that by the original price: $5 ÷ $20. What percent is that?
+f. $5 ÷ $20 = 0.25. What percent increase is that?
+1. 5%
+2. 20%
+3. 25%  ✓ Correct
+4. 45%
+Feedback: Excellent! 0.25 as a percent is 25%, so the shirt's price increased by 25%. You've now covered converting percents, finding a percent of a number, and percent change. Let's verify what you've learned.
+Verification
+g. To find 15% of 60, first change 15% to a decimal. What is 15% as a decimal?
+1. 1.5
+2. 0.15  ✓ Correct
+3. 0.015
+4. 15.0
+Feedback: Right, 15% = 0.15. Now multiply: what is 0.15 × 60?
+h. What is 0.15 × 60?
+1. 9  ✓ Correct
+2. 15
+3. 6
+4. 90
+Feedback: You've got it! 0.15 × 60 = 9. So 15% of 60 is 9.
+i. First, find the amount of change. What is $400 − $300?
+1. $100  ✓ Correct
+2. $300
+3. $400
+4. $700
+Feedback: Right, the amount of change is $100. Now divide the amount of change by the original number: $100 ÷ $400. What is that?
+j. What is $100 ÷ $400 written as a percent?
+1. 4%
+2. 40%
+3. 25%  ✓ Correct
+4. 10%
+Feedback: Exactly! $100 ÷ $400 = 0.25 = 25%. So the phone's price decreased by 25%. Great work — you're ready for the quiz!
+Quiz
+k. What is 60% written as a decimal?
+1. 6.0
+2. 0.60  ✓ Correct
+3. 0.06
+4. 60.0
+l. What is 75% written as a fraction in lowest terms?
+1. 3/4  ✓ Correct
+2. 75/100
+3. 1/75
+4. 7/5
+m. What is 30% of 90?
+1. 30
+2. 27  ✓ Correct
+3. 60
+4. 9
+n. What is 10% of 250?
+1. 2.5
+2. 10
+3. 25  ✓ Correct
+4. 100
+o. A savings account grows from $200 to $250. What is the percent increase?
+1. 20%
+2. 25%  ✓ Correct
+3. 50%
+4. 5%
+
+Lesson 5
+a. The ratio 10:15 simplifies to what, by dividing both numbers by 5?
+1. 2:3  ✓ Correct
+2. 5:10
+3. 1:2
+4. 10:3
+Feedback: Right! 10:15 simplifies to 2:3. A proportion is just a statement that two ratios are equal, like a/b = c/d. Proportions let us solve for an unknown amount when we know a rate.
+b. If a car travels 150 miles in 3 hours, we can set up the proportion 150 miles/3 hours = x miles/5 hours to find how far it travels in 5 hours. To solve a proportion like this, what do we do?
+1. Add the two fractions together
+2. Cross-multiply the two ratios  ✓ Correct
+3. Divide the ratios
+4. Subtract the denominators
+Feedback: Exactly! Cross-multiplying means multiplying diagonally across the equal sign. For 150/3 = x/5, we multiply 150 × 5 and 3 × x.
+c. Cross-multiplying 150/3 = x/5 gives 3 × x = 150 × 5. What is 150 × 5?
+1. 155
+2. 750  ✓ Correct
+3. 450
+4. 300
+Feedback: Right! 150 × 5 = 750. So now we have 3x = 750. To solve for x, what do we do to both sides?
+d. To solve 3x = 750 for x, what should we do to both sides?
+1. Divide both sides by 3  ✓ Correct
+2. Multiply both sides by 3
+3. Subtract 3 from both sides
+4. Add 3 to both sides
+Feedback: Exactly! Dividing both sides by 3 gives x = 750 ÷ 3. What is 750 ÷ 3?
+e. What is 750 ÷ 3?
+1. 25
+2. 200
+3. 250  ✓ Correct
+4. 300
+Feedback: Perfect! 750 ÷ 3 = 250. So the car travels 250 miles in 5 hours. You've now learned how to write ratios and solve proportions. Let's verify what you've learned.
+Verification
+f. Let's set up a proportion: 2 cups flour/3 cups sugar = 6 cups flour/x cups sugar. Cross-multiplying gives 2 × x = 3 × 6. What is 3 × 6?
+1. 9
+2. 18  ✓ Correct
+3. 12
+4. 15
+Feedback: Right! 3 × 6 = 18. So now we have 2x = 18. What do we do next to solve for x?
+g. To solve 2x = 18 for x, what is x?
+1. 6
+2. 16
+3. 9  ✓ Correct
+4. 36
+Feedback: You've got it! 18 ÷ 2 = 9. So you need 9 cups of sugar.
+h. Set up the proportion: 1 inch/20 miles = 3.5 inches/x miles. Cross-multiplying gives 1 × x = 20 × 3.5. What is 20 × 3.5?
+1. 60
+2. 70  ✓ Correct
+3. 23.5
+4. 40
+Feedback: Right! 20 × 3.5 = 70. Since 1 × x is just x, we already have our answer: x = 70. So 3.5 inches represents 70 miles. Great work — you're ready for the quiz!
+Quiz
+i. Simplify the ratio 12:18.
+1. 6:9
+2. 2:3  ✓ Correct
+3. 4:6
+4. 1:2
+j. Solve for x: 4/5 = x/20
+1. 15
+2. 25
+3. 16  ✓ Correct
+4. 4
+k. A recipe calls for 3 eggs for every 2 cups of flour. How many eggs are needed for 8 cups of flour?
+1. 10
+2. 12  ✓ Correct
+3. 6
+4. 16
+l. If a car uses 8 gallons of gas to travel 240 miles, how many gallons are needed to travel 360 miles?
+1. 10
+2. 14
+3. 12  ✓ Correct
+4. 15
+m. Solve for x: x/6 = 15/18
+1. 5  ✓ Correct
+2. 3
+3. 9
+4. 12
+
+Lesson 6
+a. What does 2⁴ mean?
+1. 2 × 4
+2. 2 × 2 × 2 × 2  ✓ Correct
+3. 4 × 4
+4. 2 + 2 + 2 + 2
+Feedback: Right! 2⁴ means 2 multiplied by itself 4 times. What is 2 × 2 × 2 × 2?
+b. What is 2 × 2 × 2 × 2?
+1. 8
+2. 16  ✓ Correct
+3. 12
+4. 6
+Feedback: Exactly! 2⁴ = 16. Now let's look at square roots — they undo exponents. The square root of a number is the value that, multiplied by itself, gives you that number. The square root of 16 is 4, because 4 × 4 = 16.
+c. What is the square root of 9?
+1. 81
+2. 4.5
+3. 3  ✓ Correct
+4. 18
+Feedback: Right! 3 × 3 = 9, so the square root of 9 is 3. Let's try a bigger one: what is the square root of 49?
+d. What is the square root of 49?
+1. 6
+2. 7  ✓ Correct
+3. 24.5
+4. 14
+Feedback: Exactly! 7 × 7 = 49. Now let's look at cube roots. The cube root of a number is the value that, multiplied by itself 3 times, gives that number. The cube root of 8 is 2, because 2 × 2 × 2 = 8.
+e. What is the cube root of 27?
+1. 9
+2. 3  ✓ Correct
+3. 13.5
+4. 6
+Feedback: Correct! 3 × 3 × 3 = 27, so the cube root of 27 is 3. Last idea: a negative exponent means "1 over" the positive version. So 2⁻² means 1/2².
+f. What does 2⁻² equal?
+1. -4
+2. 1/4  ✓ Correct
+3. -2
+4. 4
+Feedback: Nice work! 2⁻² = 1/2² = 1/4. You've now covered exponents, square roots, and cube roots. Let's verify what you've learned.
+Verification
+g. 3³ means 3 multiplied by itself how many times?
+1. 2
+2. 3  ✓ Correct
+3. 4
+4. 9
+Feedback: Right, 3 times. So 3³ = 3 × 3 × 3. What is 3 × 3 × 3?
+h. What is 3 × 3 × 3?
+1. 9
+2. 27  ✓ Correct
+3. 6
+4. 18
+Feedback: You've got it! 3³ = 27.
+i. We need a number that, multiplied by itself, gives 100. Is it 9 or 10?
+1. 9
+2. 10  ✓ Correct
+3. 50
+4. 20
+Feedback: Right! 10 × 10 = 100, so the square root of 100 is 10. Great work — you're ready for the quiz!
+Quiz
+j. What is 5²?
+1. 10
+2. 25  ✓ Correct
+3. 52
+4. 15
+k. What is 2³?
+1. 6
+2. 8  ✓ Correct
+3. 9
+4. 23
+l. What is the square root of 64?
+1. 6
+2. 32
+3. 8  ✓ Correct
+4. 16
+m. What is the cube root of 64?
+1. 4  ✓ Correct
+2. 8
+3. 21.3
+4. 16
+n. What does 3⁻¹ equal?
+1. -3
+2. 1/3  ✓ Correct
+3. 3
+4. -1/3
+
+Lesson 7
+a. What does the expression x − 5 mean in words?
+1. 5 minus some number
+2. Some number, minus 5  ✓ Correct
+3. Some number times 5
+4. Some number divided by 5
+Feedback: Right! x − 5 means "some number, minus 5." Let's go the other direction now — turning words into expressions. The phrase "some number plus 7" becomes the expression:
+b. How do we write "some number plus 7" as an expression?
+1. 7 − x
+2. x + 7  ✓ Correct
+3. 7x
+4. x/7
+Feedback: Exactly! x + 7. Now try: "the product of some number and 12." Remember, "product" means multiply.
+c. How do we write "the product of some number and 12" as an expression?
+1. x + 12
+2. x − 12
+3. 12x  ✓ Correct
+4. x/12
+Feedback: Right! 12x means 12 times x. Now let's evaluate an expression. To evaluate means to plug in a number for the variable and calculate the result. If x = 3, what is x + 7?
+d. If x = 3, what is x + 7?
+1. 21
+2. 4
+3. 10  ✓ Correct
+4. 7
+Feedback: Exactly! Substitute 3 for x: 3 + 7 = 10. Let's try a slightly harder one. If a = 2 and b = 5, what is 3a + b?
+e. If a = 2 and b = 5, what is 3a + b?
+1. 11  ✓ Correct
+2. 10
+3. 15
+4. 7
+Feedback: Nice work! 3a means 3 × a = 3 × 2 = 6. Then 6 + b = 6 + 5 = 11. Remember, order of operations still applies — always multiply before you add! You've now covered translating expressions and evaluating them. Let's verify what you've learned.
+Verification
+f. "12 less than some number" means we start with the number and subtract 12 from it. How do we write this?
+1. 12 − x
+2. x − 12  ✓ Correct
+3. x + 12
+4. 12x
+Feedback: You've got it! "12 less than x" is written x − 12 — the number comes first, then we subtract 12 from it.
+g. First, what is x² when x = 4?
+1. 8
+2. 16  ✓ Correct
+3. 12
+4. 4
+Feedback: Right, 4² = 16. Now substitute: 2(16) + 3. What is 2 × 16?
+h. What is 2 × 16?
+1. 18
+2. 34
+3. 32  ✓ Correct
+4. 30
+Feedback: Exactly! 2 × 16 = 32. Now add 3: 32 + 3 = 35. So 2x² + 3 = 35 when x = 4. Great work — you're ready for the quiz!
+Quiz
+i. How do we write "some number divided by 4" as an expression?
+1. 4/x
+2. x/4  ✓ Correct
+3. 4x
+4. x − 4
+j. How do we write "9 more than some number"?
+1. x + 9  ✓ Correct
+2. 9x
+3. 9 − x
+4. x − 9
+k. If x = 6, what is x + 10?
+1. 60
+2. 4
+3. 16  ✓ Correct
+4. 106
+l. If a = 3 and b = 4, what is 2a + b?
+1. 10  ✓ Correct
+2. 11
+3. 14
+4. 7
+m. If x = 5, what is 3x − 2?
+1. 13  ✓ Correct
+2. 15
+3. 17
+4. 9
+
+Lesson 8
+a. In the equation x + 4 = 9, what operation is being done to x?
+1. Multiplication
+2. Addition  ✓ Correct
+3. Subtraction
+4. Division
+Feedback: Right! 4 is being added to x. To undo addition, we do the opposite operation: subtraction. So we subtract 4 from both sides.
+b. Subtracting 4 from both sides of x + 4 = 9 gives x = 9 − 4. What is 9 − 4?
+1. 13
+2. 5  ✓ Correct
+3. 4
+4. 6
+Feedback: Exactly! x = 5. Now let's try a subtraction equation: x − 6 = 10. To undo subtraction, what's the opposite operation?
+c. To undo subtraction in x − 6 = 10, what should we do to both sides?
+1. Subtract 6
+2. Add 6  ✓ Correct
+3. Multiply by 6
+4. Divide by 6
+Feedback: Right! Adding 6 to both sides gives x = 10 + 6. What is 10 + 6?
+d. What is 10 + 6?
+1. 4
+2. 60
+3. 16  ✓ Correct
+4. 14
+Feedback: Exactly! x = 16. Now let's try multiplication: 3x = 15. To undo multiplication, we divide both sides by the same number.
+e. To solve 3x = 15, what should we divide both sides by?
+1. 15
+2. x
+3. 3  ✓ Correct
+4. 5
+Feedback: Right! Dividing both sides by 3 gives x = 15 ÷ 3. What is 15 ÷ 3?
+f. What is 15 ÷ 3?
+1. 3
+2. 5  ✓ Correct
+3. 45
+4. 12
+Feedback: Exactly! x = 5. Finally, let's try division: x/4 = 6. To undo division, we multiply both sides.
+g. To solve x/4 = 6, what should we multiply both sides by?
+1. 6
+2. x
+3. 4  ✓ Correct
+4. 24
+Feedback: Right! Multiplying both sides by 4 gives x = 6 × 4. What is 6 × 4?
+h. What is 6 × 4?
+1. 10
+2. 20
+3. 24  ✓ Correct
+4. 28
+Feedback: Perfect! x = 24. You've now solved one-step equations using all four operations. Let's verify what you've learned.
+Verification
+i. To undo the "+8," what should we do to both sides?
+1. Add 8
+2. Subtract 8  ✓ Correct
+3. Multiply by 8
+4. Divide by 8
+Feedback: Right! Subtracting 8 from both sides gives x = 20 − 8. What is 20 − 8?
+j. What is 20 − 8?
+1. 28
+2. 12  ✓ Correct
+3. 14
+4. 10
+Feedback: You've got it! x = 12.
+k. To undo the multiplication by 5, what should we do to both sides?
+1. Multiply by 5
+2. Add 5
+3. Divide by 5  ✓ Correct
+4. Subtract 5
+Feedback: Right! Dividing both sides by 5 gives x = 35 ÷ 5. What is 35 ÷ 5?
+l. What is 35 ÷ 5?
+1. 5
+2. 6
+3. 7  ✓ Correct
+4. 30
+Feedback: Exactly! x = 7. Great work — you're ready for the quiz!
+Quiz
+m. Solve for x: x + 9 = 17
+1. 8  ✓ Correct
+2. 26
+3. 9
+4. 17
+n. Solve for x: x − 5 = 12
+1. 7
+2. 60
+3. 17  ✓ Correct
+4. 5
+o. Solve for x: 4x = 28
+1. 24
+2. 7  ✓ Correct
+3. 32
+4. 112
+p. Solve for x: x/6 = 9
+1. 1.5
+2. 15
+3. 3
+4. 54  ✓ Correct
+q. Solve for x: x − 15 = 30
+1. 15
+2. 45  ✓ Correct
+3. 2
+4. 450
+
+Lesson 9
+a. In 2x + 3 = 11, which should we undo first?
+1. The multiplication by 2
+2. The addition of 3  ✓ Correct
+3. Both at the same time
+4. Neither — solve for x directly
+Feedback: Right! Undo the "+3" first by subtracting 3 from both sides. That gives 2x = 11 − 3. What is 11 − 3?
+b. What is 11 − 3?
+1. 14
+2. 8  ✓ Correct
+3. 9
+4. 6
+Feedback: Exactly! Now we have 2x = 8. What should we do next to solve for x?
+c. To solve 2x = 8 for x, what should we do to both sides?
+1. Add 2
+2. Subtract 2
+3. Divide by 2  ✓ Correct
+4. Multiply by 2
+Feedback: Right! Dividing both sides by 2 gives x = 8 ÷ 2. What is 8 ÷ 2?
+d. What is 8 ÷ 2?
+1. 2
+2. 4  ✓ Correct
+3. 6
+4. 16
+Feedback: Perfect! x = 4. Let's try one with subtraction: 3x − 4 = 11. What should we undo first?
+e. In 3x − 4 = 11, what should we undo first?
+1. The multiplication by 3
+2. The subtraction of 4  ✓ Correct
+3. Both at once
+4. We can't solve this
+Feedback: Right! Add 4 to both sides: 3x = 11 + 4. What is 11 + 4?
+f. What is 11 + 4?
+1. 7
+2. 14
+3. 15  ✓ Correct
+4. 44
+Feedback: Exactly! Now 3x = 15. What's the last step?
+g. To solve 3x = 15 for x, what do we do?
+1. Divide both sides by 3  ✓ Correct
+2. Subtract 3
+3. Add 3
+4. Multiply by 3
+Feedback: Right! x = 15 ÷ 3 = 5. Sometimes an equation has like terms — matching variables — on the same side, like 2x + 3x = 20. Before doing anything else, combine them: 2x + 3x = 5x.
+h. After combining like terms, 2x + 3x = 20 becomes 5x = 20. What is x?
+1. 100
+2. 15
+3. 4  ✓ Correct
+4. 25
+Feedback: Excellent! 20 ÷ 5 = 4, so x = 4. You've now learned to solve multi-step equations, including combining like terms. Let's verify what you've learned.
+Verification
+i. What should we undo first?
+1. The addition of 5  ✓ Correct
+2. The multiplication by 4
+3. Both at once
+4. Neither
+Feedback: Right! Subtract 5 from both sides: 4x = 21 − 5. What is 21 − 5?
+j. What is 21 − 5?
+1. 26
+2. 16  ✓ Correct
+3. 17
+4. 15
+Feedback: Right! Now 4x = 16. What is x?
+k. Solve 4x = 16 for x.
+1. 4  ✓ Correct
+2. 12
+3. 64
+4. 20
+Feedback: You've got it! x = 4.
+l. First, combine the like terms 3x and 2x. What do they combine to?
+1. 6x
+2. 5x  ✓ Correct
+3. 5x²
+4. x
+Feedback: Right! 3x + 2x = 5x. So now we have 5x − 5 = 20. What should we undo first?
+m. In 5x − 5 = 20, what should we undo first?
+1. Add 5 to both sides  ✓ Correct
+2. Divide by 5
+3. Subtract 5 again
+4. Multiply by 5
+Feedback: Right! 5x = 20 + 5 = 25. What is x?
+n. Solve 5x = 25 for x.
+1. 4
+2. 5  ✓ Correct
+3. 20
+4. 125
+Feedback: Exactly! x = 5. Great work — you're ready for the quiz!
+Quiz
+o. Solve for x: 2x + 7 = 15
+1. 4  ✓ Correct
+2. 11
+3. 8
+4. 22
+p. Solve for x: 3x − 6 = 9
+1. 1
+2. 5  ✓ Correct
+3. 15
+4. 45
+q. Solve for x: 5x + 2x = 21
+1. 3  ✓ Correct
+2. 21
+3. 7
+4. 19
+r. Solve for x: 4x − 3 = 13
+1. 2.5
+2. 4  ✓ Correct
+3. 16
+4. 40
+s. Solve for x: 2x + 3x − 4 = 16
+1. 2
+2. 4  ✓ Correct
+3. 20
+4. 12
+
+Lesson 10
+a. What does x > 5 mean?
+1. x equals 5
+2. x is less than 5
+3. x is greater than 5  ✓ Correct
+4. x is greater than or equal to 5
+Feedback: Right! x > 5 means x can be any number bigger than 5 (but not 5 itself). There are two more inequality symbols you'll see: ≤ means "less than OR equal to," and ≥ means "greater than OR equal to." The extra line under the symbol is what adds "or equal to."
+b. What does x ≥ 5 mean?
+1. x is greater than 5, but not equal to 5
+2. x is greater than 5, OR x equals 5  ✓ Correct
+3. x is less than 5
+4. x equals 5 exactly
+Feedback: Right! x ≥ 5 means x can be 5, or any number bigger than 5. Now let's solve an inequality. We solve them almost exactly the same way we solve equations. Let's solve one: x + 3 > 10. Just like an equation, we undo the "+3" the same way.
+c. To solve x + 3 > 10, what should we do to both sides?
+1. Add 3
+2. Subtract 3  ✓ Correct
+3. Multiply by 3
+4. Divide by 3
+Feedback: Right! Subtracting 3 from both sides gives x > 10 − 3. What is 10 − 3?
+d. What is 10 − 3?
+1. 13
+2. 6
+3. 7  ✓ Correct
+4. 3
+Feedback: Exactly! x > 7. Now here's the one special rule for inequalities: if you multiply or divide both sides by a NEGATIVE number, you must flip the inequality sign.
+e. To solve −2x > 8, we divide both sides by −2. Since we're dividing by a negative number, what must we do to the inequality sign?
+1. Leave it the same
+2. Flip it  ✓ Correct
+3. Remove it
+4. Turn it into an equal sign
+Feedback: Right! Dividing by a negative flips the sign. So > becomes <. 8 ÷ (−2) = −4, and the sign flips, giving us x < −4.
+f. Following that same rule, if we divide both sides of −3x < 12 by −3, what does the answer look like?
+1. x < −4
+2. x > −4  ✓ Correct
+3. x < 4
+4. x > 4
+Feedback: Exactly! 12 ÷ (−3) = −4, and since we divided by a negative, the sign flips from < to >, giving x > −4. You've now learned to solve inequalities, including the negative-flip rule. Let's verify what you've learned.
+Verification
+g. To solve x − 4 < 9, what should we do to both sides?
+1. Subtract 4
+2. Add 4  ✓ Correct
+3. Multiply by 4
+4. Divide by 4
+Feedback: Right! Adding 4 to both sides gives x < 9 + 4. What is 9 + 4?
+h. What is 9 + 4?
+1. 5
+2. 13  ✓ Correct
+3. 36
+4. 14
+Feedback: You've got it! x < 13.
+i. To solve −5x ≤ 20, we divide both sides by −5. Since we're dividing by a negative number, what happens to the inequality sign?
+1. It stays the same
+2. It flips, so ≤ becomes ≥  ✓ Correct
+3. It becomes an equal sign
+4. It disappears
+Feedback: Right! The sign flips. 20 ÷ (−5) = −4, so the answer is x ≥ −4. Great work — you're ready for the quiz!
+Quiz
+j. Solve for x: x + 6 > 14
+1. x > 8  ✓ Correct
+2. x > 20
+3. x < 8
+4. x > 2.33
+k. Solve for x: x − 5 < 3
+1. x < 15
+2. x < 8  ✓ Correct
+3. x > 8
+4. x < 2
+l. Solve for x: 4x ≥ 20
+1. x ≥ 5  ✓ Correct
+2. x ≤ 5
+3. x ≥ 80
+4. x ≥ 16
+m. Solve for x: −2x < 10
+1. x < −5
+2. x < 5
+3. x > −5  ✓ Correct
+4. x > 5
+n. Solve for x: −3x ≥ 9
+1. x ≥ −3
+2. x ≤ −3  ✓ Correct
+3. x ≥ 3
+4. x ≤ 3
+
+Lesson 11
+a. Which axis is horizontal (left-right)?
+1. The y-axis
+2. The x-axis  ✓ Correct
+3. Both are horizontal
+4. Neither is horizontal
+Feedback: Right! The x-axis runs left-right, and the y-axis runs up-down. Every point on the plane is written as an ordered pair (x, y). The first number tells you how far to move left or right; the second tells you how far to move up or down.
+b. In the ordered pair (3, 5), what does the 3 tell you?
+1. Move up 3
+2. Move right 3  ✓ Correct
+3. Move down 3
+4. Move left 3
+Feedback: Right! The first number (the x-coordinate) tells you how far to move left (negative) or right (positive) from the origin. The second number (the y-coordinate) tells you how far to move up or down.
+c. In the ordered pair (3, 5), what does the 5 tell you?
+1. Move right 5
+2. Move left 5
+3. Move up 5  ✓ Correct
+4. Move down 5
+Feedback: Exactly! So to plot (3, 5), you'd move right 3, then up 5. The plane is divided into 4 quadrants. Quadrant I (top-right) has positive x and positive y. Quadrant II (top-left) has negative x and positive y. Quadrant III (bottom-left) has negative x and negative y. Quadrant IV (bottom-right) has positive x and negative y.
+d. The point (−2, 4) has a negative x and a positive y. Which quadrant is it in?
+1. Quadrant I
+2. Quadrant II  ✓ Correct
+3. Quadrant III
+4. Quadrant IV
+Feedback: Right! Negative x, positive y is Quadrant II (top-left). What about the point (5, −3), with positive x and negative y?
+e. Which quadrant is (5, −3) in?
+1. Quadrant I
+2. Quadrant II
+3. Quadrant III
+4. Quadrant IV  ✓ Correct
+Feedback: Exactly! Positive x, negative y is Quadrant IV (bottom-right). You've now learned to plot points and identify quadrants. Let's verify what you've learned.
+Verification
+f. Starting at the origin, how far and which direction should you move for the x-coordinate, 4?
+1. Right 4  ✓ Correct
+2. Left 4
+3. Up 4
+4. Down 4
+Feedback: Right! Move right 4. Now for the y-coordinate, −2, which direction do you move?
+g. For a y-coordinate of −2, which direction do you move, and how far?
+1. Up 2
+2. Down 2  ✓ Correct
+3. Right 2
+4. Left 2
+Feedback: You've got it! Move right 4, then down 2. This point is in Quadrant IV, since x is positive and y is negative.
+h. The point (−3, −6) has a negative x and a negative y. Which quadrant has both coordinates negative?
+1. Quadrant I
+2. Quadrant II
+3. Quadrant III  ✓ Correct
+4. Quadrant IV
+Feedback: Exactly! Both negative means Quadrant III (bottom-left). Great work — you're ready for the quiz!
+Quiz
+i. In the ordered pair (x, y), which axis does the x-coordinate correspond to?
+1. The vertical axis
+2. The horizontal axis  ✓ Correct
+3. Neither axis
+4. Both axes equally
+j. What quadrant is the point (2, 3) in?
+1. Quadrant I  ✓ Correct
+2. Quadrant II
+3. Quadrant III
+4. Quadrant IV
+k. What quadrant is the point (−4, 5) in?
+1. Quadrant I
+2. Quadrant II  ✓ Correct
+3. Quadrant III
+4. Quadrant IV
+l. What quadrant is the point (−1, −7) in?
+1. Quadrant I
+2. Quadrant II
+3. Quadrant III  ✓ Correct
+4. Quadrant IV
+m. To plot the point (6, −2), which way do you move for the y-coordinate?
+1. Up 2
+2. Down 2  ✓ Correct
+3. Left 2
+4. Right 2
+
+Lesson 12
+a. An angle measures 45°. What type of angle is this?
+1. Right
+2. Acute  ✓ Correct
+3. Obtuse
+4. Straight
+Feedback: Right! 45° is less than 90°, so it's acute. What about an angle that measures 120°?
+b. An angle measures 120°. What type of angle is this?
+1. Right
+2. Acute
+3. Obtuse  ✓ Correct
+4. Straight
+Feedback: Exactly! 120° is more than 90° but less than 180°, so it's obtuse. Now let's learn two special angle relationships. Complementary angles are two angles that add up to exactly 90°.
+c. If one angle measures 30° and it's complementary to a second angle, what does the second angle measure?
+1. 30°
+2. 60°  ✓ Correct
+3. 90°
+4. 150°
+Feedback: Right! 90° − 30° = 60°. Supplementary angles are two angles that add up to exactly 180° (they form a straight line together).
+d. If one angle measures 110° and it's supplementary to a second angle, what does the second angle measure?
+1. 70°  ✓ Correct
+2. 90°
+3. 110°
+4. 290°
+Feedback: Exactly! 180° − 110° = 70°. Last idea: vertical angles. When two lines cross, they form an X shape, and the two angles directly across from each other (opposite each other) are called vertical angles — they're always equal.
+e. Two lines cross, forming an X. One of the angles measures 50°. What does the angle directly across from it (its vertical angle) measure?
+1. 40°
+2. 50°  ✓ Correct
+3. 130°
+4. 180°
+Feedback: Right! Vertical angles are always equal, so it's also 50°. You've now learned to classify angles and use complementary, supplementary, and vertical angle relationships. Let's verify what you've learned.
+Verification
+f. Complementary angles add up to what total?
+1. 90°  ✓ Correct
+2. 180°
+3. 360°
+4. 45°
+Feedback: Right, 90°. So we need 90° − 25°. What is that?
+g. What is 90° − 25°?
+1. 55°
+2. 65°  ✓ Correct
+3. 75°
+4. 115°
+Feedback: You've got it! The other angle is 65°.
+h. Supplementary angles add up to what total?
+1. 90°
+2. 180°  ✓ Correct
+3. 360°
+4. 100°
+Feedback: Right, 180°. So we need 180° − 65°. What is that?
+i. What is 180° − 65°?
+1. 105°
+2. 115°  ✓ Correct
+3. 125°
+4. 95°
+Feedback: Exactly! The other angle is 115°. Great work — you're ready for the quiz!
+Quiz
+j. An angle measures 90°. What type of angle is it?
+1. Acute
+2. Right  ✓ Correct
+3. Obtuse
+4. Straight
+k. An angle measures 175°. What type of angle is it?
+1. Right
+2. Acute
+3. Obtuse  ✓ Correct
+4. Straight
+l. Two angles are complementary. One measures 55°. What is the other?
+1. 25°
+2. 35°  ✓ Correct
+3. 45°
+4. 125°
+m. Two angles are supplementary. One measures 40°. What is the other?
+1. 50°
+2. 140°  ✓ Correct
+3. 320°
+4. 60°
+n. Two lines cross, forming an X. One angle measures 75°. What is its vertical angle?
+1. 15°
+2. 105°
+3. 75°  ✓ Correct
+4. 285°
+
+Lesson 13
+a. A triangle has angles of 60° and 70°. What must the third angle be?
+1. 50°  ✓ Correct
+2. 60°
+3. 130°
+4. 10°
+Feedback: Right! 180° − 60° − 70° = 50°. Now let's learn triangle types. An equilateral triangle has 3 equal sides and 3 equal angles (each 60°). An isosceles triangle has at least 2 equal sides. A scalene triangle has no equal sides at all. A right triangle has one 90° angle.
+b. A triangle has sides of 5, 5, and 8. What type of triangle is this?
+1. Equilateral
+2. Isosceles  ✓ Correct
+3. Scalene
+4. Right
+Feedback: Right! Two sides are equal (both 5), so it's isosceles. Now let's learn the Pythagorean theorem, which works only for right triangles. It says a² + b² = c², where a and b are the two shorter sides (legs) and c is the longest side (the hypotenuse, opposite the right angle).
+c. In a right triangle, which side is always the longest?
+1. Side a
+2. Side b
+3. The hypotenuse (c)  ✓ Correct
+4. They're always equal
+Feedback: Right! The hypotenuse is always the longest side, opposite the right angle. Let's use the formula. If a = 3 and b = 4, what is a² + b²?
+d. If a = 3 and b = 4, what is a² + b²? (3² = 9, 4² = 16)
+1. 12
+2. 25  ✓ Correct
+3. 49
+4. 7
+Feedback: Exactly! 9 + 16 = 25. Since a² + b² = c², we now know c² = 25. What is c (the square root of 25)?
+e. If c² = 25, what is c?
+1. 12.5
+2. 50
+3. 5  ✓ Correct
+4. 625
+Feedback: Perfect! The square root of 25 is 5, so the hypotenuse is 5. This is a classic "3-4-5" right triangle. You've now learned the angle sum rule, triangle types, and the Pythagorean theorem. Let's verify what you've learned.
+Verification
+f. The three angles must add up to 180°. What is 180° − 90° − 40°?
+1. 40°
+2. 50°  ✓ Correct
+3. 130°
+4. 70°
+Feedback: You've got it! The third angle is 50°. Since one angle is 90°, this is also a right triangle.
+g. Using a² + b² = c², what is 6² + 8²? (6² = 36, 8² = 64)
+1. 48
+2. 100  ✓ Correct
+3. 14
+4. 84
+Feedback: Right! 36 + 64 = 100. So c² = 100. What is c?
+h. If c² = 100, what is c?
+1. 50
+2. 5
+3. 10  ✓ Correct
+4. 20
+Feedback: Exactly! The square root of 100 is 10, so the hypotenuse is 10. Great work — you're ready for the quiz!
+Quiz
+i. A triangle has angles of 50° and 60°. What is the third angle?
+1. 60°
+2. 70°  ✓ Correct
+3. 110°
+4. 80°
+j. A triangle has three equal sides. What type of triangle is it?
+1. Scalene
+2. Isosceles
+3. Equilateral  ✓ Correct
+4. Right
+k. A triangle has no equal sides. What type of triangle is it?
+1. Equilateral
+2. Isosceles
+3. Scalene  ✓ Correct
+4. Right
+l. A right triangle has legs of length 9 and 12. What is the hypotenuse?
+1. 15  ✓ Correct
+2. 21
+3. 21.6
+4. 13
+m. Which side of a right triangle is the hypotenuse?
+1. Either of the two shorter sides
+2. The side opposite the right angle  ✓ Correct
+3. The shortest side
+4. It depends on the triangle
+
+Lesson 14
+a. A quadrilateral has three angles measuring 90°, 90°, and 100°. What must the fourth angle be?
+1. 80°  ✓ Correct
+2. 90°
+3. 100°
+4. 70°
+Feedback: Right! 360° − 90° − 90° − 100° = 80°. Now let's learn the different types of quadrilaterals. A parallelogram has 2 pairs of parallel sides, and opposite sides are equal in length. A rectangle is a parallelogram where all 4 angles are right angles (90°).
+b. What makes a rectangle different from a general parallelogram?
+1. A rectangle has all 4 sides equal
+2. A rectangle has all 4 angles equal to 90°  ✓ Correct
+3. A rectangle has no parallel sides
+4. There is no difference
+Feedback: Right! All angles are 90° in a rectangle. A square is even more specific — it's a rectangle where all 4 sides are also equal in length.
+c. Is every square also a rectangle?
+1. Yes  ✓ Correct
+2. No
+3. Only sometimes
+4. Squares and rectangles are unrelated
+Feedback: Right! Every square is a rectangle (with the extra rule that all sides are equal), but not every rectangle is a square. A rhombus is a parallelogram with all 4 sides equal, but its angles don't have to be 90°.
+d. What's the key difference between a rhombus and a square?
+1. A rhombus doesn't need to have 4 equal sides
+2. A rhombus's angles don't have to be 90°  ✓ Correct
+3. A rhombus has only 3 sides
+4. There is no difference
+Feedback: Exactly! Both have 4 equal sides, but a square must have 90° angles, while a rhombus doesn't. Finally, a trapezoid is a quadrilateral with only ONE pair of parallel sides (not two).
+e. How many pairs of parallel sides does a trapezoid have?
+1. 0
+2. 1  ✓ Correct
+3. 2
+4. 4
+Feedback: Right! Just 1 pair. This is what makes it different from a parallelogram, which has 2 pairs. You've now learned to identify the major quadrilateral types. Let's verify what you've learned.
+Verification
+f. The four angles must add up to 360°. What is 360° − 70° − 110° − 100°?
+1. 70°
+2. 80°  ✓ Correct
+3. 90°
+4. 100°
+Feedback: You've got it! The fourth angle is 80°.
+g. 4 equal sides AND four 90° angles — what shape has both of these features?
+1. Rhombus
+2. Rectangle
+3. Square  ✓ Correct
+4. Trapezoid
+Feedback: Exactly! A square has both 4 equal sides and four 90° angles. Great work — you're ready for the quiz!
+Quiz
+h. What is the sum of the interior angles of any quadrilateral?
+1. 180°
+2. 270°
+3. 360°  ✓ Correct
+4. 90°
+i. A parallelogram with four 90° angles is called a:
+1. Rhombus
+2. Rectangle  ✓ Correct
+3. Trapezoid
+4. Triangle
+j. A quadrilateral with only one pair of parallel sides is a:
+1. Rectangle
+2. Rhombus
+3. Trapezoid  ✓ Correct
+4. Square
+k. A rhombus always has:
+1. Four right angles
+2. Four equal sides  ✓ Correct
+3. Only one pair of parallel sides
+4. Three sides
+l. A quadrilateral has angles of 85°, 95°, and 90°. What is the fourth angle?
+1. 80°
+2. 90°  ✓ Correct
+3. 95°
+4. 100°
+
+Lesson 15
+a. A triangle has sides of 5, 7, and 9. What is its perimeter?
+1. 16
+2. 21  ✓ Correct
+3. 315
+4. 11
+Feedback: Right! 5 + 7 + 9 = 21. For a square, since all 4 sides are equal, there's a shortcut: perimeter = 4 × side length.
+b. A square has a side length of 6. Using the shortcut, what is its perimeter?
+1. 10
+2. 24  ✓ Correct
+3. 36
+4. 12
+Feedback: Exactly! 4 × 6 = 24. For a rectangle, opposite sides are equal, so the shortcut is perimeter = 2 × length + 2 × width.
+c. A rectangle has a length of 8 and a width of 3. What is 2 × 8?
+1. 11
+2. 16  ✓ Correct
+3. 24
+4. 10
+Feedback: Right! 2 × 8 = 16. Now what is 2 × 3?
+d. What is 2 × 3?
+1. 5
+2. 9
+3. 6  ✓ Correct
+4. 3
+Feedback: Exactly! 2 × 3 = 6. Now add the two results together: 16 + 6. What is 16 + 6?
+e. What is 16 + 6?
+1. 20
+2. 22  ✓ Correct
+3. 24
+4. 18
+Feedback: Perfect! The rectangle's perimeter is 22. Sometimes you're given the perimeter and one side, and asked to find the missing side instead. Let's learn that. A rectangle has a perimeter of 26 and a width of 5. Since perimeter = 2 × length + 2 × width, we can write 26 = 2 × length + 2 × 5. What is 2 × 5?
+f. What is 2 × 5?
+1. 7
+2. 10  ✓ Correct
+3. 25
+4. 52
+Feedback: Right! Now our equation is 26 = 2 × length + 10. To find "2 × length" by itself, what should we do to both sides?
+g. To get "2 × length" alone in 26 = 2 × length + 10, what should we do to both sides?
+1. Add 10
+2. Subtract 10  ✓ Correct
+3. Multiply by 10
+4. Divide by 10
+Feedback: Right! Subtracting 10 from both sides gives 2 × length = 26 − 10. What is 26 − 10?
+h. What is 26 − 10?
+1. 36
+2. 16  ✓ Correct
+3. 6
+4. 20
+Feedback: Exactly! So 2 × length = 16. To find length by itself, what's the last step?
+i. To solve 2 × length = 16 for length, what should we do?
+1. Divide both sides by 2  ✓ Correct
+2. Multiply both sides by 2
+3. Add 2 to both sides
+4. Subtract 2 from both sides
+Feedback: Right! 16 ÷ 2 = 8, so the length is 8. You've now learned to find perimeter by adding sides, use shortcuts for squares and rectangles, and work backward to find a missing side. Let's verify what you've learned.
+Verification
+j. Using perimeter = 2 × length + 2 × width, what is 2 × 10?
+1. 12
+2. 20  ✓ Correct
+3. 15
+4. 50
+Feedback: Right! 2 × 10 = 20. What is 2 × 5?
+k. What is 2 × 5?
+1. 7
+2. 10  ✓ Correct
+3. 25
+4. 15
+Feedback: Right! Now add: 20 + 10. What is the total perimeter?
+l. What is 20 + 10?
+1. 25
+2. 30  ✓ Correct
+3. 50
+4. 15
+Feedback: You've got it! The perimeter is 30.
+m. Since all 5 sides are equal, we multiply the side length by the number of sides: 7 × 5. What is that?
+1. 12
+2. 25
+3. 35  ✓ Correct
+4. 30
+Feedback: Exactly! 7 × 5 = 35. The perimeter is 35.
+n. Using 30 = 2 × length + 2 × width, first find 2 × width: 2 × 4. What is that?
+1. 6
+2. 8  ✓ Correct
+3. 24
+4. 16
+Feedback: Right! So 30 = 2 × length + 8. To isolate "2 × length," what should we do to both sides?
+o. To isolate "2 × length" in 30 = 2 × length + 8, what should we do?
+1. Add 8
+2. Subtract 8  ✓ Correct
+3. Multiply by 8
+4. Divide by 8
+Feedback: Right! 30 − 8 = 22, so 2 × length = 22. What is length?
+p. Solve 2 × length = 22 for length.
+1. 20
+2. 44
+3. 11  ✓ Correct
+4. 24
+Feedback: You've got it! The length is 11. Great work — you're ready for the quiz!
+Quiz
+q. A triangle has sides 4, 6, and 8. What is its perimeter?
+1. 18  ✓ Correct
+2. 24
+3. 10
+4. 192
+r. A square has a side length of 9. What is its perimeter?
+1. 18
+2. 81
+3. 36  ✓ Correct
+4. 27
+s. A rectangle has a length of 12 and a width of 4. What is its perimeter?
+1. 16
+2. 32  ✓ Correct
+3. 48
+4. 24
+t. A rectangle has a perimeter of 40 and a width of 6. What is its length?
+1. 14  ✓ Correct
+2. 34
+3. 28
+4. 17
+u. A regular hexagon (6 equal sides) has a side length of 5. What is its perimeter?
+1. 11
+2. 25
+3. 30  ✓ Correct
+4. 60
+
+Lesson 16
+a. A rectangle has a length of 8 and a width of 5. What is its area?
+1. 13
+2. 26
+3. 40  ✓ Correct
+4. 45
+Feedback: Right! 8 × 5 = 40 square units. For a square, since length and width are the same, area = side × side (or side²).
+b. A square has a side length of 6. What is its area?
+1. 12
+2. 24
+3. 36  ✓ Correct
+4. 30
+Feedback: Exactly! 6 × 6 = 36 square units. For a triangle, area = 1/2 × base × height. The "base" is any side you choose to measure along, and the "height" is the straight up-and-down distance from that base to the opposite corner — not the length of a slanted side.
+c. A triangle has a base of 10 and a height of 4. What is 1/2 × 10?
+1. 5  ✓ Correct
+2. 20
+3. 10
+4. 4
+Feedback: Right! 1/2 × 10 = 5. Now multiply by the height: 5 × 4. What is that?
+d. What is 5 × 4?
+1. 9
+2. 20  ✓ Correct
+3. 14
+4. 40
+Feedback: Exactly! The triangle's area is 20 square units. For a parallelogram, area = base × height (no need to divide by 2, unlike a triangle).
+e. A parallelogram has a base of 7 and a height of 3. What is its area?
+1. 10
+2. 21  ✓ Correct
+3. 42
+4. 3.5
+Feedback: Right! 7 × 3 = 21 square units. Finally, for a trapezoid, area = 1/2 × (base1 + base2) × height.
+f. A trapezoid has bases of 4 and 6, and a height of 5. What is (4 + 6)?
+1. 24
+2. 10  ✓ Correct
+3. 2
+4. 20
+Feedback: Right! 4 + 6 = 10. Now, area = 1/2 × 10 × 5. What is 1/2 × 10?
+g. What is 1/2 × 10?
+1. 20
+2. 5  ✓ Correct
+3. 15
+4. 10
+Feedback: Right! Now multiply by the height: 5 × 5. What is the trapezoid's area?
+h. What is 5 × 5?
+1. 10
+2. 20
+3. 25  ✓ Correct
+4. 15
+Feedback: Perfect! The trapezoid's area is 25 square units. You've now learned area formulas for rectangles, squares, triangles, parallelograms, and trapezoids. Let's verify what you've learned.
+Verification
+i. Using area = 1/2 × base × height, what is 1/2 × 12?
+1. 24
+2. 6  ✓ Correct
+3. 60
+4. 12
+Feedback: Right! 1/2 × 12 = 6. Now multiply by the height: 6 × 5. What is that?
+j. What is 6 × 5?
+1. 11
+2. 30  ✓ Correct
+3. 60
+4. 25
+Feedback: You've got it! The area is 30 square units.
+k. First, add the two bases: 5 + 9. What is that?
+1. 14  ✓ Correct
+2. 45
+3. 4
+4. 13
+Feedback: Right! 5 + 9 = 14. Now, area = 1/2 × 14 × 4. What is 1/2 × 14?
+l. What is 1/2 × 14?
+1. 28
+2. 7  ✓ Correct
+3. 4
+4. 10
+Feedback: Right! Now multiply by the height: 7 × 4. What is the trapezoid's area?
+m. What is 7 × 4?
+1. 11
+2. 24
+3. 28  ✓ Correct
+4. 21
+Feedback: Exactly! The trapezoid's area is 28 square units. Great work — you're ready for the quiz!
+Quiz
+n. A rectangle has a length of 9 and a width of 6. What is its area?
+1. 15
+2. 30
+3. 54  ✓ Correct
+4. 45
+o. A square has a side length of 8. What is its area?
+1. 16
+2. 32
+3. 64  ✓ Correct
+4. 24
+p. A triangle has a base of 14 and a height of 6. What is its area?
+1. 42  ✓ Correct
+2. 84
+3. 20
+4. 70
+q. A parallelogram has a base of 10 and a height of 4. What is its area?
+1. 20
+2. 40  ✓ Correct
+3. 14
+4. 80
+r. A trapezoid has bases of 6 and 10, and a height of 5. What is its area?
+1. 21
+2. 40  ✓ Correct
+3. 80
+4. 30
+
+Lesson 17
+a. A circle has a radius of 5. What is its diameter?
+1. 2.5
+2. 5
+3. 10  ✓ Correct
+4. 25
+Feedback: Right! Diameter = 2 × radius = 2 × 5 = 10. Now let's find circumference — the distance around a circle. Every circle, no matter its size, has the exact same ratio between its distance-around (circumference) and its distance-across (diameter). That fixed number is called pi, written with the symbol π, and it's approximately 3.14. So the formula is circumference = π × diameter.
+b. A circle has a diameter of 4. Using circumference = π × diameter, what is 3.14 × 4?
+1. 7.14
+2. 12.56  ✓ Correct
+3. 6.28
+4. 16.00
+Feedback: Right! 3.14 × 4 = 12.56. So the circumference is about 12.56 units. Now let's find area. The formula is area = π × radius², so we square the radius first, then multiply by π.
+c. A circle has a radius of 3. What is radius² (3²)?
+1. 6
+2. 9  ✓ Correct
+3. 3
+4. 12
+Feedback: Right! 3² = 9. Now multiply by π (3.14): 3.14 × 9. What is that?
+d. What is 3.14 × 9?
+1. 27.00
+2. 28.26  ✓ Correct
+3. 12.14
+4. 18.84
+Feedback: Exactly! The circle's area is about 28.26 square units. You've now learned to find a circle's diameter, circumference, and area. Let's verify what you've learned.
+Verification
+e. First, find the diameter: 2 × 6. What is that?
+1. 8
+2. 12  ✓ Correct
+3. 3
+4. 36
+Feedback: Right! The diameter is 12. Now, circumference = 3.14 × 12. What is that?
+f. What is 3.14 × 12?
+1. 37.68  ✓ Correct
+2. 15.14
+3. 34.54
+4. 40.00
+Feedback: You've got it! The circumference is about 37.68 units.
+g. First, find radius²: 5². What is that?
+1. 10
+2. 25  ✓ Correct
+3. 15
+4. 50
+Feedback: Right! 5² = 25. Now, area = 3.14 × 25. What is that?
+h. What is 3.14 × 25?
+1. 78.5  ✓ Correct
+2. 28.14
+3. 62.8
+4. 75.0
+Feedback: Exactly! The circle's area is about 78.5 square units. Great work — you're ready for the quiz!
+Quiz
+i. A circle has a radius of 8. What is its diameter?
+1. 4
+2. 16  ✓ Correct
+3. 24
+4. 64
+j. A circle has a diameter of 10. What is its circumference (use π ≈ 3.14)?
+1. 31.4  ✓ Correct
+2. 15.7
+3. 62.8
+4. 78.5
+k. A circle has a radius of 4. What is its area (use π ≈ 3.14)?
+1. 12.56
+2. 50.24  ✓ Correct
+3. 25.12
+4. 16.00
+l. A circle has a diameter of 14. What is its radius?
+1. 28
+2. 7  ✓ Correct
+3. 14
+4. 3.5
+m. A circle has a radius of 10. What is its circumference (use π ≈ 3.14)?
+1. 31.4
+2. 62.8  ✓ Correct
+3. 314.0
+4. 15.7
+
+Lesson 18
+a. A box has a length of 4, a width of 3, and a height of 2. What is 4 × 3?
+1. 7
+2. 12  ✓ Correct
+3. 9
+4. 24
+Feedback: Right! 4 × 3 = 12. Now multiply by the height: 12 × 2. What is that?
+b. What is 12 × 2?
+1. 14
+2. 20
+3. 24  ✓ Correct
+4. 6
+Feedback: Exactly! The box's volume is 24 cubic units. For a cube, since all sides are equal, volume = side³ (side × side × side).
+c. A cube has a side length of 3. What is 3³ (3 × 3 × 3)?
+1. 9
+2. 27  ✓ Correct
+3. 6
+4. 12
+Feedback: Right! 3 × 3 × 3 = 27 cubic units. For a cylinder, volume = π × radius² × height.
+d. A cylinder has a radius of 2 and a height of 5. First, what is radius² (2²)?
+1. 2
+2. 4  ✓ Correct
+3. 8
+4. 10
+Feedback: Right! 2² = 4. Now multiply by π (3.14): 3.14 × 4. What is that?
+e. What is 3.14 × 4?
+1. 7.14
+2. 12.56  ✓ Correct
+3. 6.28
+4. 16.00
+Feedback: Exactly! 3.14 × 4 = 12.56. Now multiply by the height: 12.56 × 5. What is that?
+f. What is 12.56 × 5?
+1. 17.56
+2. 62.80  ✓ Correct
+3. 50.24
+4. 60.00
+Feedback: Perfect! The cylinder's volume is about 62.8 cubic units. Finally, for a sphere, volume = 4/3 × π × radius³.
+g. A sphere has a radius of 3. What is radius³ (3 × 3 × 3)?
+1. 9
+2. 27  ✓ Correct
+3. 6
+4. 12
+Feedback: Right! 3³ = 27. The full calculation would be 4/3 × 3.14 × 27 ≈ 113.04 cubic units. You've now learned volume formulas for rectangular solids, cubes, cylinders, and spheres. Let's verify what you've learned.
+Verification
+h. What is 5 × 4?
+1. 9
+2. 20  ✓ Correct
+3. 15
+4. 12
+Feedback: Right! Now multiply by the height: 20 × 3. What is that?
+i. What is 20 × 3?
+1. 23
+2. 60  ✓ Correct
+3. 40
+4. 63
+Feedback: You've got it! The box's volume is 60 cubic units.
+j. What is 4³ (4 × 4 × 4)?
+1. 16
+2. 64  ✓ Correct
+3. 12
+4. 48
+Feedback: Exactly! 4 × 4 × 4 = 64. The cube's volume is 64 cubic units. Great work — you're ready for the quiz!
+Quiz
+k. A box has a length of 6, a width of 2, and a height of 5. What is its volume?
+1. 13
+2. 60  ✓ Correct
+3. 30
+4. 40
+l. A cube has a side length of 5. What is its volume?
+1. 15
+2. 25
+3. 125  ✓ Correct
+4. 20
+m. A cylinder has a radius of 3 and a height of 4. What is its volume (use π ≈ 3.14)?
+1. 37.68
+2. 113.04  ✓ Correct
+3. 56.52
+4. 12.56
+n. Which formula finds the volume of a sphere?
+1. π × radius²
+2. length × width × height
+3. 4/3 × π × radius³  ✓ Correct
+4. π × radius² × height
+o. A box has a length of 10, a width of 5, and a height of 2. What is its volume?
+1. 17
+2. 50
+3. 100  ✓ Correct
+4. 20
+
+Lesson 19
+a. A bag has 10 marbles total, and 3 of them are red. What is the "number of possible outcomes" here?
+1. 3
+2. 10  ✓ Correct
+3. 7
+4. 13
+Feedback: Right! There are 10 total marbles, so 10 is the number of possible outcomes. What is the "number of positive outcomes" — the marbles we want (red ones)?
+b. How many positive outcomes (red marbles) are there?
+1. 10
+2. 7
+3. 3  ✓ Correct
+4. 13
+Feedback: Exactly! 3 red marbles. So the probability of picking a red marble is 3/10. Let's try a classic example: a 6-sided die (numbered 1-6). What is the probability of rolling a 4?
+c. A 6-sided die has 6 possible outcomes, and only one of them is a 4. What is the probability of rolling a 4?
+1. 1/4
+2. 1/6  ✓ Correct
+3. 4/6
+4. 6/1
+Feedback: Right! 1 positive outcome ÷ 6 possible outcomes = 1/6. What about rolling an even number (2, 4, or 6)?
+d. There are 3 even numbers on a 6-sided die (2, 4, 6). What is the probability of rolling an even number?
+1. 3/6, which simplifies to 1/2  ✓ Correct
+2. 1/3
+3. 6/3
+4. 2/6
+Feedback: Exactly! 3/6 simplifies to 1/2. So there's a 50% chance of rolling an even number. Probability can be written as a fraction, a decimal, or a percent — they all mean the same thing. 1/2 = 0.5 = 50%.
+e. A spinner has 4 equal sections, and only 1 section is blue. What is the probability of landing on blue, written as a percent?
+1. 4%
+2. 40%
+3. 25%  ✓ Correct
+4. 1%
+Feedback: Right! 1/4 = 0.25 = 25%. You've now learned how to calculate basic probability. Let's verify what you've learned.
+Verification
+f. How many possible outcomes (total candies) are there?
+1. 5
+2. 20  ✓ Correct
+3. 15
+4. 25
+Feedback: Right, 20 total. How many positive outcomes (yellow candies)?
+g. How many positive outcomes are there?
+1. 20
+2. 15
+3. 5  ✓ Correct
+4. 25
+Feedback: Exactly! So the probability is 5/20, which simplifies to 1/4. That's a 25% chance.
+h. If 4 out of 10 cards have stars, how many cards do NOT have stars?
+1. 4
+2. 10
+3. 6  ✓ Correct
+4. 14
+Feedback: Right! 10 − 4 = 6 cards without stars. So the probability of NOT drawing a star card is 6/10, which simplifies to 3/5. Great work — you're ready for the quiz!
+Quiz
+i. A bag has 8 marbles, and 2 are green. What is the probability of picking a green marble?
+1. 1/8
+2. 1/4  ✓ Correct
+3. 1/2
+4. 2/8, unsimplified is also acceptable but 1/4 is the reduced answer
+j. What is the probability of rolling a 6 on a standard 6-sided die?
+1. 1/6  ✓ Correct
+2. 1/3
+3. 6/6
+4. 1/2
+k. A spinner has 5 equal sections, 2 of which are red. What is the probability of landing on red?
+1. 2/5  ✓ Correct
+2. 5/2
+3. 1/5
+4. 3/5
+l. A drawer has 12 socks, and 3 are black. What is the probability, as a percent, of picking a black sock?
+1. 12%
+2. 3%
+3. 25%  ✓ Correct
+4. 36%
+m. A box has 10 tickets, and 6 are winning tickets. What is the probability of NOT picking a winning ticket?
+1. 6/10
+2. 4/10, which simplifies to 2/5  ✓ Correct
+3. 10/6
+4. 1/10
+
+Lesson 20
+a. A coin is flipped twice. The probability of heads on one flip is 1/2. Since the flips are independent, how do we find the probability of getting heads BOTH times?
+1. Add 1/2 + 1/2
+2. Multiply 1/2 × 1/2  ✓ Correct
+3. Subtract 1/2 − 1/2
+4. Divide 1/2 ÷ 1/2
+Feedback: Right! For "this AND that" with independent events, we multiply. What is 1/2 × 1/2?
+b. What is 1/2 × 1/2?
+1. 1/2
+2. 1
+3. 1/4  ✓ Correct
+4. 2/4, unsimplified
+Feedback: Exactly! 1/2 × 1/2 = 1/4. So there's a 1 in 4 chance of flipping heads twice in a row. Let's try dice: what is the probability of rolling a 6 on two dice rolls in a row?
+c. The probability of rolling a 6 once is 1/6. What do we do to find the probability of rolling a 6 twice in a row?
+1. Add 1/6 + 1/6
+2. Multiply 1/6 × 1/6  ✓ Correct
+3. Multiply 1/6 × 2
+4. Divide 1/6 ÷ 2
+Feedback: Right! 1/6 × 1/6 = 1/36. Now let's look at a different situation: finding the probability of EITHER of two outcomes happening, when they can't both happen at once (like drawing a card that's a heart OR a spade). Here, you ADD the two probabilities.
+d. A deck of 52 cards has 13 hearts and 13 spades. To find the probability of drawing a heart OR a spade, what do we do?
+1. Multiply 13/52 × 13/52
+2. Add 13/52 + 13/52  ✓ Correct
+3. Divide 13/52 ÷ 13/52
+4. Subtract 13/52 − 13/52
+Feedback: Right! Since a card can't be both a heart and a spade at once, we add. What is 13/52 + 13/52?
+e. What is 13/52 + 13/52?
+1. 13/52
+2. 26/104
+3. 26/52, which simplifies to 1/2  ✓ Correct
+4. 169/52
+Feedback: Exactly! 26/52 simplifies to 1/2. So there's a 50% chance of drawing a heart or a spade. Remember the rule: "AND" for independent events means multiply; "OR" for non-overlapping events means add. You've now learned multiple-event probability. Let's verify what you've learned.
+Verification
+f. These are two independent events joined by "AND." What do we do with their probabilities, 1/2 and 1/6?
+1. Add them
+2. Multiply them  ✓ Correct
+3. Subtract them
+4. Divide them
+Feedback: Right! Multiply. What is 1/2 × 1/6?
+g. What is 1/2 × 1/6?
+1. 1/8
+2. 1/12  ✓ Correct
+3. 2/6
+4. 1/3
+Feedback: You've got it! The probability is 1/12.
+h. A ball can't be both red and blue, so we add the probabilities: 4/7 + 3/7. What is that?
+1. 7/14
+2. 7/7, which equals 1  ✓ Correct
+3. 12/49
+4. 1/7
+Feedback: Exactly! 4/7 + 3/7 = 7/7 = 1. That makes sense — since every ball is either red or blue, it's certain (100%) that you'll pick one or the other. Great work — you're ready for the quiz!
+Quiz
+i. What is the probability of flipping a coin twice and getting heads both times?
+1. 1/2
+2. 1/4  ✓ Correct
+3. 1
+4. 1/6
+j. What is the probability of rolling a die twice and getting a 5 both times?
+1. 1/6
+2. 1/12
+3. 1/36  ✓ Correct
+4. 2/6
+k. When finding the probability of two independent events BOTH happening, what operation do you use?
+1. Addition
+2. Subtraction
+3. Multiplication  ✓ Correct
+4. Division
+l. A bag has 5 red and 4 blue marbles (9 total). What is the probability of picking a red OR a blue marble?
+1. 9/9, which equals 1  ✓ Correct
+2. 5/9
+3. 4/9
+4. 20/81
+m. What is the probability of flipping a coin and getting heads, then flipping it again and getting heads again?
+1. 1/2
+2. 1
+3. 1/4  ✓ Correct
+4. 2/4
+
+Lesson 21
+a. The phrase "the sum of a number and 8" — which operation does "sum" signal?
+1. Addition  ✓ Correct
+2. Subtraction
+3. Multiplication
+4. Division
+Feedback: Right! "Sum" means add. So "the sum of a number and 8" becomes x + 8. What about the phrase "12 less than a number"?
+b. "12 less than a number" — which operation does "less than" signal?
+1. Addition
+2. Subtraction  ✓ Correct
+3. Multiplication
+4. Division
+Feedback: Exactly! "Less than" means subtract — and remember, the number comes first: x − 12 (not 12 − x). What about "the product of a number and 6"?
+c. "The product of a number and 6" — which operation does "product" signal?
+1. Addition
+2. Subtraction
+3. Multiplication  ✓ Correct
+4. Division
+Feedback: Right! "Product" means multiply: 6x. What about "a number divided equally among 4 groups"?
+d. "A number divided equally among 4 groups" — which operation does this signal?
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division  ✓ Correct
+Feedback: Exactly! "Divided" means divide: x/4. Let's put it all together. Translate this whole sentence into an equation: "The total bill is $45." Which word tells us to use an equal sign?
+e. In "the total bill is $45," which word signals an equal sign?
+1. "total"
+2. "bill"
+3. "is"  ✓ Correct
+4. "$45"
+Feedback: Right! "Is" means equals. So the equation would be: total bill = $45. You've now learned to spot key words and translate word problems into equations. Let's verify what you've learned.
+Verification
+f. "Increased by" signals which operation?
+1. Addition  ✓ Correct
+2. Subtraction
+3. Multiplication
+4. Division
+Feedback: Right! So "a number increased by 7" becomes x + 7. And "gives 20" means it equals 20. What's the full equation?
+g. What is the full equation for "a number increased by 7 gives 20"?
+1. x − 7 = 20
+2. x + 7 = 20  ✓ Correct
+3. 7x = 20
+4. x/7 = 20
+Feedback: You've got it! x + 7 = 20.
+h. "Times" signals which operation?
+1. Addition
+2. Subtraction
+3. Multiplication  ✓ Correct
+4. Division
+Feedback: Right! So "3 times a number" becomes 3x. And "is" means equals 27. What's the full equation?
+i. What is the full equation for "3 times a number is 27"?
+1. 3 + x = 27
+2. x/3 = 27
+3. 3x = 27  ✓ Correct
+4. x − 3 = 27
+Feedback: Exactly! 3x = 27. Great work — you're ready for the quiz!
+Quiz
+j. Which key word signals subtraction?
+1. Sum
+2. Product
+3. Fewer than  ✓ Correct
+4. Divided
+k. Translate: "the sum of a number and 9 is 15"
+1. x − 9 = 15
+2. x + 9 = 15  ✓ Correct
+3. 9x = 15
+4. x/9 = 15
+l. Translate: "the product of a number and 5 is 40"
+1. x + 5 = 40
+2. 5x = 40  ✓ Correct
+3. x − 5 = 40
+4. x/5 = 40
+m. Translate: "a number divided by 4 is 8"
+1. 4x = 8
+2. x − 4 = 8
+3. x/4 = 8  ✓ Correct
+4. x + 4 = 8
+n. Which key word signals an equal sign?
+1. "total"
+2. "is"  ✓ Correct
+3. "more than"
+4. "per"
+
+Lesson 22
+a. In the formula d = rt, what does the letter r stand for?
+1. Distance
+2. Rate  ✓ Correct
+3. Time
+4. None of these
+Feedback: Right! r stands for rate, which just means speed. What does the letter t stand for?
+b. In the formula d = rt, what does the letter t stand for?
+1. Distance
+2. Rate
+3. Time  ✓ Correct
+4. None of these
+Feedback: Exactly! t stands for time — how long something travels. And d stands for distance — how far it travels. Now let's use the formula on a real problem. A car travels at 60 miles per hour for 3 hours. In this problem, which number is the "rate" (the speed)?
+c. A car travels at 60 miles per hour for 3 hours. Which number in this problem is the rate?
+1. 3
+2. 60  ✓ Correct
+3. 180
+4. 20
+Feedback: Right! 60 mph is the rate — that's how fast the car is going. Which number is the time?
+d. In the same problem, which number is the time?
+1. 60
+2. 180
+3. 3  ✓ Correct
+4. 20
+Feedback: Exactly! The time is 3 hours — that's how long the car travels. Now we have everything we need for d = rt. Multiply rate × time: 60 × 3. What is the distance?
+e. What is 60 × 3?
+1. 63
+2. 180  ✓ Correct
+3. 20
+4. 120
+Feedback: Perfect! The car travels 180 miles. Now let's solve for a different piece. If distance = 240 miles and rate = 60 mph, how do we find time? Since d = rt, we can rearrange to time = distance ÷ rate.
+f. Using time = distance ÷ rate, what is 240 ÷ 60?
+1. 3
+2. 4  ✓ Correct
+3. 180
+4. 300
+Feedback: Right! It takes 4 hours. Similarly, if we know distance and time, we can find rate = distance ÷ time. If a plane travels 500 miles in 2 hours, what is its rate?
+g. Using rate = distance ÷ time, what is 500 ÷ 2?
+1. 200
+2. 1000
+3. 250  ✓ Correct
+4. 500
+Feedback: Exactly! The plane's rate is 250 mph. You've now learned to use d = rt to solve for distance, time, or rate. Let's verify what you've learned.
+Verification
+h. Using d = rt, what is 12 × 2.5?
+1. 14.5
+2. 24
+3. 30  ✓ Correct
+4. 25
+Feedback: You've got it! She travels 30 miles.
+i. Using time = distance ÷ rate, what is 300 ÷ 75?
+1. 3.75
+2. 4  ✓ Correct
+3. 5
+4. 225
+Feedback: Exactly! The trip takes 4 hours. Great work — you're ready for the quiz!
+Quiz
+j. A car travels at 50 mph for 4 hours. How far does it travel?
+1. 54 miles
+2. 200 miles  ✓ Correct
+3. 12.5 miles
+4. 100 miles
+k. A runner covers 26 miles in 4 hours. What is their average rate?
+1. 6.5 mph  ✓ Correct
+2. 22 mph
+3. 104 mph
+4. 30 mph
+l. A plane needs to travel 900 miles at 300 mph. How long will the trip take?
+1. 2 hours
+2. 3 hours  ✓ Correct
+3. 4 hours
+4. 600 hours
+m. Which formula represents the relationship between distance, rate, and time?
+1. d = r + t
+2. d = r ÷ t
+3. d = r × t  ✓ Correct
+4. d = r − t
+n. A car travels 150 miles in 2.5 hours. What is its average rate?
+1. 50 mph
+2. 375 mph
+3. 60 mph  ✓ Correct
+4. 75 mph
+
+Lesson 23
+a. If a worker can mow a lawn in 5 hours, what fraction of the lawn do they mow in 1 hour?
+1. 5
+2. 1/5  ✓ Correct
+3. 5/1
+4. 1
+Feedback: Right! Their rate is 1/5 of the lawn per hour. When two people work together, we add their individual work rates to get their combined rate.
+b. Worker A can paint a room in 4 hours (rate = 1/4 per hour). Worker B can paint the same room in 4 hours too (rate = 1/4 per hour). What is their combined rate if they work together?
+1. 1/8
+2. 1/2  ✓ Correct
+3. 1/16
+4. 2/8, unsimplified
+Feedback: Right! 1/4 + 1/4 = 2/4 = 1/2. So together, they complete 1/2 of the room every hour. Since their combined rate is 1/2 job per hour, how long does the whole job take together?
+c. If their combined rate is 1/2 of the job per hour, how many hours does it take to finish the WHOLE job (1 job)?
+1. 1/2 hour
+2. 1 hour
+3. 2 hours  ✓ Correct
+4. 4 hours
+Feedback: Exactly! If they complete 1/2 the job each hour, it takes 2 hours to complete the full job (since 1 ÷ 1/2 = 2). Let's try workers with different speeds. Worker A can dig a ditch in 6 hours (rate 1/6). Worker B can dig it in 3 hours (rate 1/3). What is their combined rate?
+d. To add 1/6 + 1/3, we need a common denominator of 6. 1/3 becomes 2/6. What is 1/6 + 2/6?
+1. 2/12
+2. 3/6, which simplifies to 1/2  ✓ Correct
+3. 1/9
+4. 3/12
+Feedback: Right! 1/6 + 2/6 = 3/6 = 1/2. Their combined rate is 1/2 of the ditch per hour. So how long does it take them working together?
+e. If their combined rate is 1/2 per hour, how long does the whole job take?
+1. 1/2 hour
+2. 1 hour
+3. 2 hours  ✓ Correct
+4. 3 hours
+Feedback: Exactly! 1 ÷ 1/2 = 2 hours. You've now learned how to set up and solve work-rate problems. Let's verify what you've learned.
+Verification
+f. If the whole job takes 8 hours, what fraction of the job is done in 1 hour?
+1. 8
+2. 1/8  ✓ Correct
+3. 1
+4. 8/1
+Feedback: You've got it! The rate is 1/8 of the job per hour.
+g. First, add their rates: 1/6 + 1/6. What is that?
+1. 1/12
+2. 2/12
+3. 1/3  ✓ Correct
+4. 2/6, unsimplified is the same value but let's simplify
+Feedback: Right! 1/6 + 1/6 = 2/6 = 1/3. Their combined rate is 1/3 of the job per hour. How long does the whole job take?
+h. If the combined rate is 1/3 per hour, how many hours does the whole job take?
+1. 1/3 hour
+2. 2 hours
+3. 3 hours  ✓ Correct
+4. 6 hours
+Feedback: Exactly! 1 ÷ 1/3 = 3 hours. Great work — you're ready for the quiz!
+Quiz
+i. If a job takes 10 hours to complete alone, what is the worker's rate per hour?
+1. 10
+2. 1/10  ✓ Correct
+3. 1
+4. 10/1
+j. Worker A's rate is 1/5 per hour, and Worker B's rate is 1/5 per hour. What is their combined rate?
+1. 1/25
+2. 2/5  ✓ Correct
+3. 1/10
+4. 2/25
+k. If two workers have a combined rate of 1/4 job per hour, how long does the whole job take them together?
+1. 1/4 hour
+2. 2 hours
+3. 4 hours  ✓ Correct
+4. 8 hours
+l. Worker A's rate is 1/4 per hour, and Worker B's rate is 1/4 per hour. Working together, how long does the job take?
+1. 1 hour
+2. 2 hours  ✓ Correct
+3. 4 hours
+4. 8 hours
+m. Worker A's rate is 1/8 per hour, and Worker B's rate is 1/8 per hour. What is their combined rate?
+1. 1/16
+2. 1/4  ✓ Correct
+3. 2/16, unsimplified
+4. 1/8
+
+Lesson 24
+a. "Sarah is 3 years older than Tom." If Tom's age is x, how do we write Sarah's age?
+1. x − 3
+2. x + 3  ✓ Correct
+3. 3x
+4. x/3
+Feedback: Right! Sarah's age is x + 3. Now, if we're told Sarah is 3 years older than Tom, AND their ages add up to 21, we can write the equation x + (x + 3) = 21. What does x + (x + 3) simplify to?
+b. What does x + (x + 3) simplify to?
+1. x + 3
+2. 2x + 3  ✓ Correct
+3. 2x
+4. x²
+Feedback: Exactly! Combining the two x's gives 2x + 3. So our equation is 2x + 3 = 21. What's the first step to solve this?
+c. To solve 2x + 3 = 21, what should we do first?
+1. Subtract 3 from both sides  ✓ Correct
+2. Divide both sides by 2
+3. Add 3 to both sides
+4. Multiply both sides by 2
+Feedback: Right! Subtracting 3 gives 2x = 21 − 3 = 18. What is x?
+d. Solve 2x = 18 for x.
+1. 16
+2. 9  ✓ Correct
+3. 36
+4. 20
+Feedback: Exactly! Tom is 9, and Sarah (x + 3) is 12. Let's check: 9 + 12 = 21. It works! Now let's try an age problem set in the past. "Two years ago, Maria was twice as old as her brother." If the brother's age two years ago was x, how do we write Maria's age two years ago?
+e. If the brother's age two years ago was x, how do we write Maria's age two years ago, given she was "twice as old"?
+1. x + 2
+2. x/2
+3. 2x  ✓ Correct
+4. x − 2
+Feedback: Right! "Twice as old" means multiply by 2: Maria's age two years ago was 2x. You've now learned to translate age relationships into equations and solve them. Let's verify what you've learned.
+Verification
+f. Let x = sister's age. Jake's age is x + 5. What equation represents "together their ages add up to 25"?
+1. x + 5 = 25
+2. x + (x + 5) = 25  ✓ Correct
+3. x − 5 = 25
+4. 5x = 25
+Feedback: Right! x + (x + 5) = 25, which simplifies to 2x + 5 = 25. What is the first step to solve?
+g. To solve 2x + 5 = 25, what do we do first?
+1. Subtract 5 from both sides  ✓ Correct
+2. Divide by 2
+3. Add 5
+4. Multiply by 2
+Feedback: Right! 2x = 25 − 5 = 20. What is x?
+h. Solve 2x = 20 for x.
+1. 10  ✓ Correct
+2. 18
+3. 40
+4. 22
+Feedback: You've got it! The sister is 10 years old (and Jake is 15).
+i. To find Ana's age in 4 years, what do we do to her current age?
+1. Add 4  ✓ Correct
+2. Subtract 4
+3. Multiply by 4
+4. Divide by 4
+Feedback: Right! 20 + 4 = 24. In 4 years, Ana will be 24. Great work — you're ready for the quiz!
+Quiz
+j. "Ben is 4 years older than Lily." If Lily's age is x, how do we write Ben's age?
+1. x − 4
+2. x + 4  ✓ Correct
+3. 4x
+4. x/4
+k. Two friends' ages add up to 30. One is 6 years older than the other. If x is the younger friend's age, what equation represents this?
+1. x + (x + 6) = 30  ✓ Correct
+2. x − 6 = 30
+3. 6x = 30
+4. x + 6 = 30
+l. Using the equation 2x + 6 = 30 from a similar age problem, what is x?
+1. 12  ✓ Correct
+2. 18
+3. 24
+4. 36
+m. "Maria is currently 15." How old will she be in 7 years?
+1. 8
+2. 22  ✓ Correct
+3. 105
+4. 21
+n. "Tom was twice as old as his sister 3 years ago." If the sister's age 3 years ago was x, how do we write Tom's age 3 years ago?
+1. x + 2
+2. x/2
+3. 2x  ✓ Correct
+4. x − 3
+
+Lesson 25
+a. A restaurant bill is $40, and you want to leave a 20% tip. What operation do we use to find the tip amount?
+1. Add 20 to 40
+2. Multiply 40 × 0.20  ✓ Correct
+3. Divide 40 by 20
+4. Subtract 20 from 40
+Feedback: Right! Change 20% to a decimal (0.20) and multiply by the bill. What is 40 × 0.20?
+b. What is 40 × 0.20?
+1. 20
+2. 8  ✓ Correct
+3. 4
+4. 80
+Feedback: Exactly! The tip is $8. Now let's try a discount problem. A jacket costs $50 and is on sale for 30% off. First, find the discount amount: 50 × 0.30.
+c. What is 50 × 0.30?
+1. 5
+2. 30
+3. 15  ✓ Correct
+4. 20
+Feedback: Right! The discount is $15. To find the sale price, we subtract the discount from the original price: 50 − 15. What is that?
+d. What is 50 − 15?
+1. 65
+2. 45
+3. 35  ✓ Correct
+4. 30
+Feedback: Exactly! The sale price is $35. Now let's try a raise problem. If someone earns $500 per month and gets a 10% raise, we find the raise amount first: 500 × 0.10.
+e. What is 500 × 0.10?
+1. 5
+2. 50  ✓ Correct
+3. 500
+4. 5000
+Feedback: Right! The raise is $50. To find the NEW salary, we add the raise to the original: 500 + 50. What is that?
+f. What is 500 + 50?
+1. 450
+2. 550  ✓ Correct
+3. 500
+4. 600
+Feedback: Perfect! The new salary is $550. You've now learned to apply percents to tips, discounts, and raises. Let's verify what you've learned.
+Verification
+g. First, find the tax amount: 60 × 0.08. What is that?
+1. 4.80  ✓ Correct
+2. 8.00
+3. 6.80
+4. 48.00
+Feedback: Right! The tax is $4.80. Now add it to the meal cost: 60 + 4.80. What is the total?
+h. What is 60 + 4.80?
+1. 64.80  ✓ Correct
+2. 60.80
+3. 68.00
+4. 55.20
+Feedback: You've got it! The total cost is $64.80.
+i. First, find the discount: 120 × 0.25. What is that?
+1. 25
+2. 30  ✓ Correct
+3. 12
+4. 95
+Feedback: Right! The discount is $30. Now subtract from the original price: 120 − 30. What is the sale price?
+j. What is 120 − 30?
+1. 150
+2. 100
+3. 90  ✓ Correct
+4. 80
+Feedback: Exactly! The sale price is $90. Great work — you're ready for the quiz!
+Quiz
+k. A bill is $25, and you leave a 20% tip. How much is the tip?
+1. $5  ✓ Correct
+2. $20
+3. $2.50
+4. $45
+l. A $200 TV is discounted 15%. What is the discount amount?
+1. $15
+2. $30  ✓ Correct
+3. $170
+4. $185
+m. Using the discount from Q2, what is the sale price of the TV?
+1. $185
+2. $215
+3. $170  ✓ Correct
+4. $150
+n. An employee earning $2,000/month gets a 5% raise. What is the new monthly salary?
+1. $2,050
+2. $2,500
+3. $2,100  ✓ Correct
+4. $1,900
+o. A $80 dinner has a 10% tax added. What is the total cost?
+1. $8
+2. $88  ✓ Correct
+3. $90
+4. $72
+
+Lesson 26
+a. "A store sells shirts for $20 each. If you buy 3 shirts and get a 10% discount on the total, how much do you pay?" What should we calculate FIRST?
+1. The 10% discount
+2. The total cost of 3 shirts before the discount  ✓ Correct
+3. The final price directly
+4. Nothing — this can't be solved
+Feedback: Right! Always find the "before" total first. What is 3 × $20?
+b. What is 3 × $20?
+1. $23
+2. $60  ✓ Correct
+3. $6
+4. $200
+Feedback: Exactly! The total before the discount is $60. Now, step 2: find the discount amount. What is 10% of $60?
+c. What is 10% of $60 (0.10 × 60)?
+1. $6  ✓ Correct
+2. $10
+3. $60
+4. $600
+Feedback: Right! The discount is $6. Now, step 3: subtract the discount from the total. What is $60 − $6?
+d. What is $60 − $6?
+1. $66
+2. $54  ✓ Correct
+3. $50
+4. $56
+Feedback: Exactly! You pay $54. Notice how we broke it into 3 small steps: find the total, find the discount, then subtract. Let's try a problem combining a rate and a total. "A machine makes 5 toys per hour. After working for 3 hours, how many more hours does it need to make 40 toys total?" What should we find first?
+e. What should we calculate first?
+1. How many toys are made in the first 3 hours  ✓ Correct
+2. How many more toys are needed
+3. The total time directly
+4. Nothing — start with the answer
+Feedback: Right! Find toys made so far: 5 × 3. What is that?
+f. What is 5 × 3?
+1. 8
+2. 15  ✓ Correct
+3. 20
+4. 40
+Feedback: Exactly! 15 toys made so far. Step 2: find how many more toys are needed. What is 40 − 15?
+g. What is 40 − 15?
+1. 55
+2. 25  ✓ Correct
+3. 15
+4. 35
+Feedback: Right! 25 more toys are needed. Step 3: since the machine makes 5 per hour, how many more hours does it need? What is 25 ÷ 5?
+h. What is 25 ÷ 5?
+1. 4
+2. 5  ✓ Correct
+3. 20
+4. 125
+Feedback: Perfect! It needs 5 more hours. You've now practiced breaking multi-step combination problems into small, ordered steps. Let's verify what you've learned.
+Verification
+i. What should we calculate first?
+1. The total cost before the coupon  ✓ Correct
+2. The $3 discount alone
+3. The final answer directly
+4. Nothing — this can't be solved
+Feedback: Right! What is 5 × $4?
+j. What is 5 × $4?
+1. $9
+2. $20  ✓ Correct
+3. $1.25
+4. $45
+Feedback: Right! The total before the coupon is $20. Now subtract the coupon: $20 − $3. What is that?
+k. What is $20 − $3?
+1. $23
+2. $17  ✓ Correct
+3. $15
+4. $7
+Feedback: You've got it! You pay $17.
+l. First, find how many more parts are needed: 100 − 20. What is that?
+1. 120
+2. 80  ✓ Correct
+3. 20
+4. 100
+Feedback: Right! 80 more parts are needed. Now, since the factory makes 8 per hour, how many more hours will it take? What is 80 ÷ 8?
+m. What is 80 ÷ 8?
+1. 8
+2. 10  ✓ Correct
+3. 72
+4. 640
+Feedback: Exactly! It will take 10 more hours. Great work — you're ready for the quiz!
+Quiz
+n. A store sells pens for $2 each. You buy 6 pens and use a coupon for $4 off the total. How much do you pay?
+1. $12
+2. $8  ✓ Correct
+3. $16
+4. $2
+o. A car wash charges $10 per car. After washing 4 cars, a $5 discount is applied to the total. What is the final amount owed?
+1. $40
+2. $45
+3. $35  ✓ Correct
+4. $50
+p. A printer prints 10 pages per minute. It has already printed 30 pages of a 100-page job. How many more minutes will it take?
+1. 10
+2. 7  ✓ Correct
+3. 13
+4. 70
+q. A store sells notebooks for $3 each. You buy 5 notebooks, and a 20% discount is applied to the total. What is the final price?
+1. $15
+2. $12  ✓ Correct
+3. $3
+4. $18
+r. A team needs to pack 60 boxes. They pack 5 boxes per hour and have already packed 25. How many more hours are needed?
+1. 5
+2. 12
+3. 7  ✓ Correct
+4. 35
+
+Lesson 27
+a. There are 12 inches in 1 foot. If you have 3 feet, what operation do we use to find how many inches that is?
+1. Add 12
+2. Multiply by 12  ✓ Correct
+3. Subtract 12
+4. Divide by 12
+Feedback: Right! Since you're going from a BIGGER unit (feet) to a SMALLER unit (inches), you multiply — it takes more inches to cover the same length. What is 3 × 12?
+b. What is 3 × 12?
+1. 15
+2. 36  ✓ Correct
+3. 9
+4. 24
+Feedback: Exactly! 3 feet = 36 inches. Now let's go the other direction. There are 3 feet in 1 yard. If you have 12 feet, what operation converts that to yards?
+c. Converting feet (smaller unit) to yards (bigger unit) — what operation do we use?
+1. Multiply by 3
+2. Divide by 3  ✓ Correct
+3. Add 3
+4. Subtract 3
+Feedback: Right! Going from a smaller unit to a bigger unit, you divide. What is 12 ÷ 3?
+d. What is 12 ÷ 3?
+1. 4  ✓ Correct
+2. 36
+3. 9
+4. 15
+Feedback: Exactly! 12 feet = 4 yards. Let's try weight. There are 16 ounces in 1 pound. If a bag weighs 48 ounces, what operation converts that to pounds?
+e. Converting ounces (smaller unit) to pounds (bigger unit) — what operation?
+1. Multiply by 16
+2. Divide by 16  ✓ Correct
+3. Add 16
+4. Subtract 16
+Feedback: Right! Smaller unit to bigger unit means divide. What is 48 ÷ 16?
+f. What is 48 ÷ 16?
+1. 32
+2. 3  ✓ Correct
+3. 64
+4. 8
+Feedback: Exactly! 48 ounces = 3 pounds. Now let's try time. There are 60 minutes in 1 hour. If a task takes 2 hours, what operation converts that to minutes?
+g. Converting hours (bigger unit) to minutes (smaller unit) — what operation?
+1. Multiply by 60  ✓ Correct
+2. Divide by 60
+3. Add 60
+4. Subtract 60
+Feedback: Right! Bigger unit to smaller unit means multiply. What is 2 × 60?
+h. What is 2 × 60?
+1. 30
+2. 120  ✓ Correct
+3. 62
+4. 180
+Feedback: Perfect! 2 hours = 120 minutes. You've now learned the golden rule of unit conversion: bigger unit → smaller unit means MULTIPLY, and smaller unit → bigger unit means DIVIDE. Let's verify what you've learned.
+Verification
+i. Cups are a smaller unit than pints. What operation converts cups to pints?
+1. Multiply by 2
+2. Divide by 2  ✓ Correct
+3. Add 2
+4. Subtract 2
+Feedback: Right! Smaller unit to bigger unit means divide. What is 4 ÷ 2?
+j. What is 4 ÷ 2?
+1. 8
+2. 2  ✓ Correct
+3. 6
+4. 1
+Feedback: You've got it! 4 cups = 2 pints.
+k. Yards are a bigger unit than feet. What operation converts yards to feet?
+1. Multiply by 3  ✓ Correct
+2. Divide by 3
+3. Add 3
+4. Subtract 3
+Feedback: Right! Bigger unit to smaller unit means multiply. What is 5 × 3?
+l. What is 5 × 3?
+1. 8
+2. 15  ✓ Correct
+3. 2
+4. 53
+Feedback: Exactly! The wall is 15 feet long. Great work — you're ready for the quiz!
+Quiz
+m. There are 12 inches in 1 foot. How many inches are in 7 feet?
+1. 19
+2. 84  ✓ Correct
+3. 60
+4. 96
+n. There are 3 feet in 1 yard. How many yards are in 9 feet?
+1. 27
+2. 6
+3. 3  ✓ Correct
+4. 12
+o. There are 16 ounces in 1 pound. How many ounces are in 5 pounds?
+1. 21
+2. 80  ✓ Correct
+3. 11
+4. 64
+p. There are 60 minutes in 1 hour. How many hours are in 180 minutes?
+1. 3  ✓ Correct
+2. 6
+3. 120
+4. 240
+q. There are 2 cups in 1 pint. How many pints are in 10 cups?
+1. 20
+2. 8
+3. 5  ✓ Correct
+4. 12
+
+Lesson 28
+a. The formula for the perimeter of a rectangle is P = 2l + 2w, where l = length and w = width. For a rectangle with length 8 and width 3, what is 2 × 8?
+1. 16  ✓ Correct
+2. 11
+3. 24
+4. 10
+Feedback: Right! 2l = 16. Now find 2w. What is 2 × 3?
+b. What is 2 × 3?
+1. 9
+2. 6  ✓ Correct
+3. 5
+4. 1
+Feedback: Exactly! 2w = 6. Now add the two parts together: 16 + 6.
+c. What is 16 + 6?
+1. 22  ✓ Correct
+2. 96
+3. 10
+4. 20
+Feedback: Right! The perimeter is 22. Next formula: the area of a triangle is A = 1/2 × base × height. For a triangle with base 10 and height 4, what is base × height (10 × 4)?
+d. What is 10 × 4?
+1. 40  ✓ Correct
+2. 14
+3. 6
+4. 400
+Feedback: Right! Now take half of that (multiply by 1/2, or divide by 2). What is 40 ÷ 2?
+e. What is 40 ÷ 2?
+1. 80
+2. 20  ✓ Correct
+3. 4
+4. 10
+Feedback: Exactly! The triangle's area is 20. Next formula: the area of a circle is A = πr², where r stands for the radius (the distance from the center of the circle to its edge), and π (pi) is a fixed number, approximately 3.14. For a circle with radius 3, what is r² (3 × 3)?
+f. What is 3 × 3?
+1. 9  ✓ Correct
+2. 6
+3. 3
+4. 12
+Feedback: Right! Now multiply by π (≈3.14): 9 × 3.14.
+g. What is 9 × 3.14 (rounded to the nearest tenth)?
+1. 12.56
+2. 28.3  ✓ Correct
+3. 18.84
+4. 31.4
+Feedback: Exactly! The circle's area is about 28.3. Last formula: the volume of a rectangular prism (box) is V = l × w × h, where l = length, w = width, and h = height. For a box with length 4, width 3, and height 2, what is l × w (4 × 3)?
+h. What is 4 × 3?
+1. 12  ✓ Correct
+2. 9
+3. 7
+4. 24
+Feedback: Right! Now multiply by the height: 12 × 2.
+i. What is 12 × 2?
+1. 14
+2. 24  ✓ Correct
+3. 10
+4. 6
+Feedback: Perfect! The volume is 24 cubic units. You've now reviewed the core formulas the ASVAB tests: perimeter, triangle area, circle area, and volume. Let's verify what you've learned.
+Verification
+j. First, find 2l. What is 2 × 6?
+1. 12  ✓ Correct
+2. 8
+3. 16
+4. 10
+Feedback: Right! Now find 2w. What is 2 × 5?
+k. What is 2 × 5?
+1. 7
+2. 10  ✓ Correct
+3. 25
+4. 5
+Feedback: Right! Now add the two parts: 12 + 10.
+l. What is 12 + 10?
+1. 22  ✓ Correct
+2. 2
+3. 120
+4. 18
+Feedback: You've got it! The perimeter is 22.
+m. First, find base × height. What is 8 × 5?
+1. 13
+2. 40  ✓ Correct
+3. 3
+4. 85
+Feedback: Right! Now take half of that. What is 40 ÷ 2?
+n. What is 40 ÷ 2?
+1. 80
+2. 20  ✓ Correct
+3. 4
+4. 38
+Feedback: Exactly! The triangle's area is 20. Great work — you're ready for the quiz!
+Quiz
+o. A rectangle has length 10 and width 4. What is its perimeter (P = 2l + 2w)?
+1. 28  ✓ Correct
+2. 40
+3. 14
+4. 24
+p. A triangle has base 6 and height 7. What is its area (A = 1/2 × base × height)?
+1. 21  ✓ Correct
+2. 42
+3. 13
+4. 84
+q. A circle has radius 2. Using A = πr² and π ≈ 3.14, what is its area?
+1. 6.28
+2. 12.56  ✓ Correct
+3. 25.12
+4. 8
+r. A rectangular box has length 5, width 2, and height 3. What is its volume (V = l × w × h)?
+1. 10
+2. 15
+3. 30  ✓ Correct
+4. 25
+s. A square has each side equal to 7 (so length = width = 7). What is its perimeter (P = 2l + 2w)?
+1. 49
+2. 14
+3. 28  ✓ Correct
+4. 21
+
+Lesson 29
+a. When you see phrases like "how far," "how fast," or "how long did it take to travel," what type of problem is being described?
+1. Distance/rate/time  ✓ Correct
+2. Age
+3. Percent
+4. Ratio
+Feedback: Right! Distance/rate/time problems almost always use travel language like "how far" or "how fast." Recognizing the keyword instantly tells you to use distance = rate × time. What keyword signals a WORK problem, where two or more people/machines complete a task together?
+b. What phrase signals a WORK problem?
+1. "Years older than"
+2. "Working together" or "combined rate"  ✓ Correct
+3. "Percent off"
+4. "Ratio of"
+Feedback: Right! "Working together" tells you to add individual work rates. What keyword signals a PERCENT word problem?
+c. What keywords signal a PERCENT word problem?
+1. "% ," "discount," "tip," or "tax"  ✓ Correct
+2. "How far"
+3. "Combined rate"
+4. "For every"
+Feedback: Right! Any of those words means you'll multiply by a decimal percent. What keyword signals an AGE problem?
+d. What phrases signal an AGE problem?
+1. "Per hour"
+2. "How many inches"
+3. "Years older/younger" or "in X years"  ✓ Correct
+4. "Discount"
+Feedback: Right! Age problems describe age relationships and often ask you to set up an equation with a variable. What keyword signals a UNIT CONVERSION problem?
+e. What phrase signals a UNIT CONVERSION problem?
+1. "Working together"
+2. "How many inches/feet/pounds/minutes is that?"  ✓ Correct
+3. "Years older"
+4. "Percent off"
+Feedback: Right! Any question asking you to express a measurement in different units is a conversion problem. Now let's talk strategy: on a timed test, if you get stuck on a hard question, what's the best move?
+f. On a timed test, if you're stuck on a hard question, what should you do?
+1. Skip it and come back later if time allows  ✓ Correct
+2. Spend as long as it takes before moving on
+3. Leave the rest of the test blank
+4. Guess immediately without reading the question
+Feedback: Exactly! Skipping a hard question protects your time for questions you CAN answer. You can always return to it later. Let's verify what you've learned with a couple of mixed, timed-style problems.
+Verification
+g. What type of problem is this, based on the keywords "mph" and "how far"?
+1. Distance/rate/time  ✓ Correct
+2. Percent
+3. Age
+4. Work
+Feedback: Right! Use distance = rate × time. What is 50 × 3?
+h. What is 50 × 3?
+1. 53
+2. 150  ✓ Correct
+3. 15
+4. 47
+Feedback: You've got it! The car travels 150 miles.
+i. What type of problem is this, based on the keyword "discounted"?
+1. Percent  ✓ Correct
+2. Ratio
+3. Unit conversion
+4. Work
+Feedback: Right! First find the discount amount: 40 × 0.25. What is that?
+j. What is 40 × 0.25?
+1. 4
+2. 10  ✓ Correct
+3. 16
+4. 100
+Feedback: Right! The discount is $10. Now subtract it from the original price: 40 − 10. What is that?
+k. What is 40 − 10?
+1. 50
+2. 30  ✓ Correct
+3. 25
+4. 4
+Feedback: Exactly! The sale price is $30. Great work — you're ready for the timed quiz!
+Quiz
+l. A train travels 60 mph for 2 hours. How far does it travel?
+1. 30
+2. 120  ✓ Correct
+3. 62
+4. 180
+m. A $50 jacket is discounted 20%. What is the sale price?
+1. 40  ✓ Correct
+2. 10
+3. 45
+4. 30
+n. Two workers can each complete a job alone in 4 hours. Working together, how long will it take?
+1. 1 hour
+2. 2 hours  ✓ Correct
+3. 4 hours
+4. 8 hours
+o. Maria is 6 years older than her brother. Together their ages total 24. How old is her brother?
+1. 9  ✓ Correct
+2. 15
+3. 12
+4. 18
+p. There are 16 ounces in 1 pound. How many ounces are in 6 pounds?
+1. 22
+2. 96  ✓ Correct
+3. 10
+4. 64
+
+Lesson 30
+a. Evaluate 3 + 4 × 2. What order of operations rule applies?
+1. Add first, then multiply: (3+4)×2 = 14
+2. Multiply first, then add: 3+(4×2) = 11  ✓ Correct
+3. Multiply first, then add differently: 3×4+2 = 14
+4. It doesn't matter which order
+Feedback: Right! Multiplication comes before addition: 4×2=8, then 3+8=11. On MK questions, watch for order-of-operations traps like this one.
+b. Solve for x: 2x + 5 = 15.
+1. x = 5  ✓ Correct
+2. x = 10
+3. x = 20
+4. x = 7.5
+Feedback: Right! Subtract 5: 2x=10, then divide by 2: x=5. Equation questions always come down to isolating the variable one step at a time.
+c. What is the area of a circle with radius 4? (Use A = πr², π ≈ 3.14)
+1. 50.24  ✓ Correct
+2. 25.12
+3. 12.56
+4. 100.48
+Feedback: Right! r² = 16, and 16 × 3.14 = 50.24. Formula questions reward knowing the formula AND computing carefully.
+d. Simplify: 3² + 4².
+1. 49
+2. 25  ✓ Correct
+3. 7
+4. 14
+Feedback: Right! 3²=9 and 4²=16, and 9+16=25. Remember: apply exponents before adding.
+e. What is 5/6 − 1/3?
+1. 1/2  ✓ Correct
+2. 4/3
+3. 1/3
+4. 2/3
+Feedback: Exactly! Using a common denominator of 6: 5/6 − 2/6 = 3/6 = 1/2. You've now reviewed order of operations, equations, geometry formulas, exponents, and fractions — the core of Mathematics Knowledge. Let's verify what you've learned.
+Verification
+f. What is the first step? Add 4 to both sides: 11 + 4. What is that?
+1. 7
+2. 15  ✓ Correct
+3. 33
+4. 4
+Feedback: Right! 3x = 15. Now divide both sides by 3: 15 ÷ 3. What is that?
+g. What is 15 ÷ 3?
+1. 3
+2. 5  ✓ Correct
+3. 12
+4. 45
+Feedback: You've got it! x = 5.
+h. First, find base × height: 6 × 5. What is that?
+1. 11
+2. 30  ✓ Correct
+3. 1
+4. 65
+Feedback: Right! Now take half of that: 30 ÷ 2. What is that?
+i. What is 30 ÷ 2?
+1. 60
+2. 15  ✓ Correct
+3. 10
+4. 28
+Feedback: Exactly! The area is 15. Great work — you're ready for the timed quiz!
+Quiz
+j. Evaluate 6 + 2 × 5.
+1. 16  ✓ Correct
+2. 40
+3. 13
+4. 11
+k. Solve for x: 4x = 28.
+1. 7  ✓ Correct
+2. 24
+3. 32
+4. 4
+l. What is 2³?
+1. 6
+2. 8  ✓ Correct
+3. 9
+4. 16
+m. Find the perimeter of a rectangle with length 9 and width 2 (P = 2l + 2w).
+1. 22  ✓ Correct
+2. 18
+3. 11
+4. 20
+n. Simplify: 3/4 + 1/8.
+1. 4/12
+2. 7/8  ✓ Correct
+3. 1/2
+4. 4/8
+
+Lesson 31
+a. If you get stuck on a hard question during the test, what's the best strategy?
+1. Skip it and come back later if time allows  ✓ Correct
+2. Stop the test until you figure it out
+3. Spend unlimited time on it
+4. Leave it blank forever without trying
+Feedback: Right! Keep moving and return later — never let one hard question eat up time you need for others.
+b. If you're not sure of the exact answer on a multiple-choice question, what's a smart strategy?
+1. Eliminate the options you know are wrong first  ✓ Correct
+2. Always pick option 1
+3. Guess without reading the question
+4. Skip reading the question and guess based on length
+Feedback: Right! Eliminating clearly wrong answers improves your odds even when you're not fully sure of the answer.
+c. For Arithmetic Reasoning (word) problems, what should you do first, before calculating anything?
+1. Identify what the question is asking and what type of problem it is  ✓ Correct
+2. Immediately guess an answer
+3. Ignore the words and just multiply every number you see
+4. Skip to the answer choices first
+Feedback: Right! Recognizing the problem type — percent, rate, age, work, and so on — tells you which steps or formula to use.
+d. For Mathematics Knowledge questions, since there's no story to translate, what matters most?
+1. Careful, accurate computation and knowing your formulas  ✓ Correct
+2. Speed only, accuracy doesn't matter
+3. Memorizing the exact questions in advance
+4. Avoiding any question with a fraction
+Feedback: Exactly! You're ready to try one guided example of each question type before taking the full test.
+Verification
+e. What operation solves this — rate times hours, or something else?
+1. Multiply the hourly rate by the number of hours  ✓ Correct
+2. Add the hourly rate and the number of hours
+3. Divide the hourly rate by the number of hours
+4. Subtract the number of hours from the hourly rate
+Feedback: Right! Multiply. What is 18 × 7?
+f. What is 18 × 7?
+1. 25
+2. 126  ✓ Correct
+3. 11
+4. 136
+Feedback: You've got it! He earns $126.
+g. Following order of operations, what should we calculate first — the exponent and the multiplication, or the subtraction?
+1. The exponent and multiplication first  ✓ Correct
+2. The subtraction first
+3. It doesn't matter, work left to right
+4. Add everything together first
+Feedback: Right! Exponents and multiplication come before subtraction. What is 5²?
+h. What is 5² (5 × 5)?
+1. 10
+2. 25  ✓ Correct
+3. 15
+4. 20
+Feedback: Right! Now what is 3 × 4?
+i. What is 3 × 4?
+1. 7
+2. 12  ✓ Correct
+3. 34
+4. 1
+Feedback: Right! Now subtract: 25 − 12. What is that?
+j. What is 25 − 12?
+1. 37
+2. 13  ✓ Correct
+3. 23
+4. 3
+Feedback: Exactly! The answer is 13. You've reviewed both question types — now for the full practice test!
+Quiz
+k. You buy 3 notebooks at $2 each and a $5 backpack. What is the total cost?
+1. 11  ✓ Correct
+2. 13
+3. 21
+4. 6
+l. A pizza is cut into 8 equal slices. If 3 slices are eaten, what fraction of the pizza remains?
+1. 5/8  ✓ Correct
+2. 3/8
+3. 8/5
+4. 1/2
+m. A runner finishes a race in 12.5 minutes, which is 1.75 minutes faster than her last race. How long was her last race?
+1. 14.25  ✓ Correct
+2. 10.75
+3. 13.75
+4. 14.75
+n. A $60 shirt is discounted 25%. What is the sale price?
+1. 15
+2. 45  ✓ Correct
+3. 35
+4. 50
+o. A map scale shows 1 inch = 20 miles. How many miles does 3.5 inches represent?
+1. 60
+2. 17.5
+3. 70  ✓ Correct
+4. 23.5
+p. A cyclist rides at 15 mph for 4 hours. How far does she travel?
+1. 19
+2. 45
+3. 60  ✓ Correct
+4. 3.75
+q. Two workers can each finish a job alone in 6 hours. Working together, how long will it take?
+1. 2
+2. 3  ✓ Correct
+3. 6
+4. 12
+r. Sam is 4 years older than Ana. Together their ages total 30. How old is Ana?
+1. 17
+2. 15
+3. 13  ✓ Correct
+4. 11
+s. There are 3 feet in 1 yard. How many feet are in 7 yards?
+1. 10
+2. 21  ✓ Correct
+3. 4
+4. 24
+t. Notebooks cost $4 each. You buy 4 notebooks and use a $2 coupon off the total. How much do you pay?
+1. 18
+2. 12
+3. 14  ✓ Correct
+4. 16
+u. Evaluate 8 − 2 × 3.
+1. 2  ✓ Correct
+2. 18
+3. 6
+4. 24
+v. What is √49?
+1. 6
+2. 7  ✓ Correct
+3. 8
+4. 9
+w. Simplify: 3x + 5x.
+1. 15x
+2. 8x  ✓ Correct
+3. 8
+4. x²
+x. Solve for x: x/4 = 9.
+1. 36  ✓ Correct
+2. 13
+3. 2.25
+4. 5
+y. Solve for x: 2x + 3 = 11.
+1. 7
+2. 4  ✓ Correct
+3. 5.5
+4. 14
+z. Solve the inequality: x − 5 > 2.
+1. x > 7  ✓ Correct
+2. x > −3
+3. x < 7
+4. x > 3
+aa. Two angles are supplementary. One angle measures 110°. What is the other angle?
+1. 70°  ✓ Correct
+2. 250°
+3. 110°
+4. 20°
+ab. A triangle has two angles measuring 50° and 60°. What is the third angle?
+1. 110°
+2. 60°
+3. 70°  ✓ Correct
+4. 130°
+ac. Find the area of a rectangle with length 9 and width 4.
+1. 26
+2. 36  ✓ Correct
+3. 13
+4. 18
+ad. Find the volume of a rectangular box with length 3, width 2, and height 5.
+1. 10
+2. 15
+3. 30  ✓ Correct
+4. 60
