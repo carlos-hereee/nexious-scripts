@@ -28,7 +28,8 @@
     "release:patch": "npm run build && npm version patch && npm publish",
     "release:minor": "npm run build && npm version minor && npm publish",
     "release:major": "npm run build && npm version major && npm publish",
-    "heal:calendar-app-uid": "node scripts/heal-calendar-app-uid.mjs"
+    "heal:calendar-app-uid": "node scripts/heal-calendar-app-uid.mjs",
+    "normalize:asvab": "node --import tsx scripts/normalize-asvab-csv.mjs"
   },
   "files": [
     "dist",
