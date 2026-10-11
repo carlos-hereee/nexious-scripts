@@ -37,7 +37,8 @@ import { fileURLToPath } from "node:url";
 // SACRED_ROOT names the folder that CONTAINS SACRED_FILES, not SACRED_FILES itself. Without it the
 // only way to rehearse a roll was to run it for real on the live ledgers, which is the one thing a
 // script that renumbers stable ids should never make a person do to find out what it will write.
-const ROOT = process.env.SACRED_ROOT ?? join(dirname(fileURLToPath(import.meta.url)), "..", "..");
+// The tooling package is nested under companyuno-library; the workspace is three levels up.
+const ROOT = process.env.SACRED_ROOT ?? join(dirname(fileURLToPath(import.meta.url)), "..", "..", "..");
 const SACRED = join(ROOT, "SACRED_FILES");
 
 // ── Layout budget ──

@@ -29,18 +29,17 @@ const dryRun = process.argv.includes("--dry-run");
 
 // Derive the company-uno root from the script's own location rather than from
 // cwd, so it is correct no matter where it is invoked from. This file sits at
-// company-uno/nexious-scripts/scripts/, so the company-uno root is two up.
+// company-uno/companyuno-library/nexious-scripts/scripts/, so the workspace root is three up.
 const scriptDir = dirname(fileURLToPath(import.meta.url));
-const ROOT = resolve(scriptDir, "..", "..");
+const ROOT = resolve(scriptDir, "..", "..", "..");
 
-// The four package repos, in descending size so the longest job starts first.
-// DeroDiscordBot is NOT one of them: it is a sibling project at ../DeroDiscordBot with its
-// own repo and its own graph, so a name listed here could never resolve under this root.
+// Each independent source repository is addressed by its workspace-relative path.
 const PACKAGES = [
 	"nexious-server",
 	"nexious-client",
-	"nexious-library",
-	"nexious-scripts",
+	"companyuno-library/nexious-library",
+	"companyuno-library/nexious-scripts",
+	"componyuno-discord-dero/DeroDiscordBot",
 ];
 
 // A package with no graph yet needs a full --code-only BUILD; one that already

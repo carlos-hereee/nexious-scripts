@@ -22,10 +22,10 @@ const dryRun = process.argv.includes("--dry-run");
 
 // Derive the repo root from the script's own location rather than from cwd, so
 // the script is correct no matter where it is invoked from. This file sits at
-// company-uno/nexious-scripts/scripts/, so the company-uno root is two up.
+// company-uno/companyuno-library/nexious-scripts/scripts/, so the workspace root is three up.
 const scriptDir = dirname(fileURLToPath(import.meta.url));
-const ROOT = resolve(scriptDir, "..", "..");
-const ROADMAPS = join(ROOT, "roadmaps");
+const ROOT = resolve(scriptDir, "..", "..", "..");
+const ROADMAPS = join(ROOT, "product-planning", "roadmaps");
 
 // If roadmaps/ is missing there is nothing to dedupe against, and proceeding
 // could misread the layout. Bail loudly instead of guessing.
