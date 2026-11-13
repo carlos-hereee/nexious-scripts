@@ -6,3 +6,31 @@ graphify-out
 .env
 .env.*
 !.env.example
+
+# AI rule files and AI-authored docs never enter git. Each project keeps its rules in its companyuno-*
+# parent folder and the ledgers and plans live in companyuno-growth/, all outside every repository, so
+# these lines only keep a stray copy out of a commit. Folder and ledger names are anchored to the repo
+# root so a same-named source folder stays visible.
+CLAUDE.md
+CLAUDE.local.md
+AGENTS.md
+AGENTS.override.md
+GEMINI.md
+.cursorrules
+.claude
+.cursor/
+.codex/
+.gemini/
+.github/copilot-instructions.md
+/roadmaps/
+/SACRED_FILES/
+/STATE.md
+/FUTURE_PLANS.md
+/FUTURE_PLANS-PART-*.md
+/HISTORICAL.md
+/TECH_DEBT.md
+/TECH_DEBT-PART-*.md
+/WIP.md
+/TODO-PLANS/
+/COMPLETED-PLANS/
+/PROPOSALS/
